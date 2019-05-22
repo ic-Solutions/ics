@@ -48,7 +48,7 @@ var CRUMINA = {};
 			$('.particles-js').each(function () {
 				var id = 'particle-' + (Math.floor(Math.random() * (999 - 111 + 1)) + 111);
 				$(this).attr('id', id);
-				particlesJS.load(id, './js/' + $(this).data('settings') + '.json', function () {
+				particlesJS.load(id, '/assets/js/' + $(this).data('settings') + '.json', function () {
 				});
 			});
 		}, 500);
@@ -465,7 +465,7 @@ var CRUMINA = {};
 			return state.text;
 		}
 		var $state = $(
-			'<span ><img class="woox-icon" sytle="display: inline-block;" src="img/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
+			'<span ><img class="woox-icon" sytle="display: inline-block;" src="/assets/img/' + state.element.value.toLowerCase() + '.png" /> ' + state.text + '</span>'
 		);
 		return $state;
 	}
