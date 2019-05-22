@@ -1,0 +1,31 @@
+.page-popup {
+    position: relative;
+    height:100%;
+}
+
+.popup {
+    position:fixed;
+    z-index:99999999;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s ease;
+}
+
+.show-popup .popup {
+    opacity:1;
+    visibility: visible;
+    overflow: hidden;
+}
+
+.popup > iframe {
+    position:absolute;
+    top:50px;
+    left:45%;
+    margin-left:-280px;
+    overflow: hidden;
+}
