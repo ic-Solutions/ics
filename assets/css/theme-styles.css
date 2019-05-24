@@ -2241,7 +2241,8 @@ button,
 input {
   /* 1 */
   overflow: visible;
-  border: none; }
+/*  border: none; */
+}
 
 /**
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
