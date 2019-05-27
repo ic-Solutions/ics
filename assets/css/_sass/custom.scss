@@ -1,1 +1,30 @@
 //Add all custom CSS here
+
+//.xyz {
+//    font-size: 100px;
+//    
+//    @include media-query($on-palm) {
+//        font-size: 20px;
+//    }
+//}
+.socials {
+      font-size: 30px;
+     li {
+        @include media-query($on-palm) {
+            font-size: 30px
+        }
+    }
+  }
+.contact-item .site-logo img {
+    @include media-query($on-palm) {
+        max-width: 150px
+    }
+}
+.category-list--btn-style li a {
+    font-size: 25px
+}
+.home-works-button {
+    @include media-query($on-palm) {
+        margin-bottom: 70px 
+    }
+}
