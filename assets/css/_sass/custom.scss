@@ -7,6 +7,10 @@
 //        font-size: 20px;
 //    }
 //}
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
 .socials {
       font-size: 30px;
      li {
@@ -26,5 +30,66 @@
 .home-works-button {
     @include media-query($on-palm) {
         margin-bottom: 70px 
+    }
+}
+.header-contact{
+    margin-right: -55vw;
+    @include media-query($on-palm) {
+        margin-right: 0
+    }
+}
+.menu-ham {
+    opacity:0.8;
+    &:hover {
+        opacity:0.5;    
+    }
+}
+.copy-center{
+    margin: 0 auto;
+    a {
+        color: #fff;
+    }
+    @include media-query($on-palm) {
+        margin-top: 40px;
+    }
+}
+.footer{
+    background: #3D434F;
+    .contact-item-title{
+        color: #fff;
+    }
+    .contact-item {
+        justify-content: inherit;
+        .info {
+            color: #fff;
+            a {
+                color: #c1c1c1;
+                &:hover{
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .socials--double-icons li a {
+        color: #fff;
+        &:hover {
+            color: aquamarine;
+        }
+    }
+}
+.crumina-portfolio-item .content {
+    top: 30px;
+}
+.site-logo img {
+    @include media-query($on-palm){
+        max-width: 50px;
+    }
+}
+//Mobile section ribbon for projects in home page
+.mobile-heading {
+    display: none;
+    @include media-query($content-width) {
+        display: block;
+        text-align: center;
     }
 }
