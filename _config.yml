@@ -6,3 +6,6 @@ sass:
 
 include:
   - _pages
+
+plugins:
+ - jekyll-seo-tag
