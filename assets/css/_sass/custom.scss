@@ -2,7 +2,7 @@
 
 //.xyz {
 //    font-size: 100px;
-//    
+//
 //    @include media-query($on-palm) {
 //        font-size: 20px;
 //    }
@@ -29,7 +29,7 @@ html{
 }
 .home-works-button {
     @include media-query($on-palm) {
-        margin-bottom: 70px 
+        margin-bottom: 70px
     }
 }
 .header-contact{
@@ -41,7 +41,7 @@ html{
 .menu-ham {
     opacity:0.8;
     &:hover {
-        opacity:0.5;    
+        opacity:0.5;
     }
 }
 .copy-center{
@@ -105,4 +105,9 @@ html{
         display: block;
         text-align: center;
     }
+}
+
+
+.copyright-wrapper {
+  margin-top: 4em;
 }
