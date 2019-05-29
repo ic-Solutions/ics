@@ -28,4 +28,9 @@
     left:45%;
     margin-left:-280px;
     overflow: hidden;
+    @include media-query($on-palm) {
+        left:5%;
+        margin-left:0;
+        width: 90%;
+    }
 }
