@@ -47,7 +47,7 @@ html{
 .copy-center{
     margin: 0 auto;
     a {
-        color: #fff;
+        color: #00ffb3;
     }
     @include media-query($on-palm) {
         margin-top: 40px;
@@ -56,25 +56,38 @@ html{
 .footer{
     background: #3D434F;
     .contact-item-title{
-        color: #fff;
+        color: #eee;
     }
     .contact-item {
         justify-content: inherit;
         .info {
-            color: #fff;
+            color: #868686;
+            font-weight: 400;
+            font-size: 16px;
             a {
-                color: #c1c1c1;
+                color: #868686;
+                font-weight: 400;
                 &:hover{
                     color: #fff;
                 }
             }
         }
+        .contact-color .info a{
+            font-weight: 400;
+            color: #00ffb3;
+            &:hover {
+                color: #fff;
+            }
+        }
     }
     .socials--double-icons li a {
-        color: #fff;
+        color: #868686;
         &:hover {
-            color: aquamarine;
+            color: #fff;
         }
+    }
+    .site-logo img {
+        opacity: 0.9;
     }
 }
 .crumina-portfolio-item .content {
