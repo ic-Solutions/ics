@@ -106,8 +106,20 @@ html{
         text-align: center;
     }
 }
-
-
 .copyright-wrapper {
   margin-top: 4em;
+}
+//header animation on mobile phone
+@include media-query($on-palm) {
+    .animated.slideUp {
+        animation-name: slideUp;
+    }
+    .animated.slideDown {
+    
+        animation-name: slideDown;
+    }
+    .animated{
+        animation-fill-mode: both;
+        will-change: transform, opacity;
+    }
 }
