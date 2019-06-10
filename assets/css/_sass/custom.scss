@@ -123,3 +123,18 @@ html{
         will-change: transform, opacity;
     }
 }
+.chat-button{
+    position: fixed;
+    right: 0;
+    bottom: 0;        
+    margin: 1em;
+    font-size: 1.5em;
+    color: #c3c9d4;
+    .chat-icon {
+        padding: 10px;
+        font-size: 3em;
+        color: #fff;
+        background: #25D366;
+        border-radius: 40%;
+    }
+}
