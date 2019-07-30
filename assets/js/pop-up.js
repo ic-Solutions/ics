@@ -11,9 +11,14 @@ $("[data-media]").on("click", function(e) {
     $('body').css('overflow', 'hidden');  //ADD THIS
 });
 
-$(".popup").on("click", function(e) {
+$(".popup").on("click", function(e) {    
     e.preventDefault();
     e.stopPropagation();
+    
+    var popup = $("[data-media]").attr("href");
+    var $popupIframe = $(popup).find("iframe");
+    
+    $popupIframe.attr("src", '');
     
     $(".page-popup").removeClass("show-popup");
     $('body').css('overflow', 'auto');  //ADD THIS
