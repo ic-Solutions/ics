@@ -146,3 +146,12 @@ html{
         width: 100%;
     }
 }
+.shop-img{
+    padding: 100px 0 0 100px;
+    @include media-query($on-laptop){
+        padding: 40px 0 0 40px;
+    }
+    @include media-query($on-palm){
+        padding: 20px 20px 0 20px;
+    }
+}
