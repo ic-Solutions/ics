@@ -11,8 +11,9 @@
       - /assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg
 
 
-- title: Holiday Greetings
-  sub-title: Greeting 1
+- title: Birthday Cards
+  category: birthday
+  sub-title: Card 1
   description: Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum augue duis dolore.
   id: greeting-2
   image:
