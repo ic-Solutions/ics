@@ -35,7 +35,7 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 						<div class="grid-sizer-half-width"></div>
 
 						{% for item in site.data.shop %}
-						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item holiday">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item {{item.category}}">
 							<div class="crumina-module crumina-teammembers-item has-popup">
 								<div class="crumina-portfolio-item">
 									<img src="{{item.image.main}}" alt="{{item.title}}" class="">
@@ -130,7 +130,7 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 							</div>
 						</div>
 						{% endfor %}
-						
+
 					</div>
 				</div>
 			</div>
