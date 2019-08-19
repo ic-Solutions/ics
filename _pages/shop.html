@@ -3,10 +3,9 @@ title: Shop
 layout: default
 permalink: /shop/
 image: https://icsoln.com/assets/img/logo-only-c.png
-
 ---
 <div class="page-popup">
-<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
+	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
 		<div class="container">
 			<div class="row medium-padding120">
 				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
@@ -25,7 +24,7 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 		<div class="container">
 			<div class="row pt80">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <ul class="category-list sorting-menu align-center category-list--btn-style">
+					<ul class="category-list sorting-menu align-center category-list--btn-style">
 						<li class="active" data-filter="*"><a href="#">all</a></li>
 						<li data-filter=".holiday"><a href="#">holiday greetings</a></li>
 						<li data-filter=".birthday"><a href="#">birthday cards</a></li>
@@ -33,211 +32,107 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 					</ul>
 
 					<div class="row sorting-container medium-padding80" id="portfolio-grid" data-layout="masonry" data-isotope='{"masonry": { "columnWidth": ".grid-sizer-half-width" }}'>
-				        <div class="grid-sizer-half-width"></div>
+						<div class="grid-sizer-half-width"></div>
+
+						{% for item in site.data.shop %}
 						<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item holiday">
-                           <div class="crumina-module crumina-teammembers-item has-popup">
-                            <div class="crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Holiday Greetings</a>
-                                    <h5 class="portfolio-title">Greeting 1</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right js-open-popup">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                            <div class='window-popup'>
-							<div class='content'>
-								<div class="teammember-details">
-									<a class='js-open-popup popup-close' href='#'>
-										<svg class="woox-icon icon-close"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-close"></use></svg>
-									</a>
-									<div class="teammembers-thumb">
-									    <ul class="slide">
-                                          <li class="first" id="slide-1"><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="" ></li>
-                                          <li id="slide-2"><img src="/assets/img/portfolio/Legno-946x546.jpg" alt=""></li>
-                                          <li id="slide-3"><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg" alt=""></li>
-                                          <li id="slide-4"><img src="/assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg" alt=""></li>
-                                        </ul>
-                                        <ul class="thumbs">
-                                          <li><a href="#slide-1"><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg"></a></li>
-                                          <li><a href="#slide-2"><img src="/assets/img/portfolio/Legno-946x546.jpg"></a></li>
-                                          <li><a href="#slide-3"><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg"></a></li>
-                                          <li><a href="#slide-4"><img src="/assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg"></a></li>
-                                        </ul>
-
+							<div class="crumina-module crumina-teammembers-item has-popup">
+								<div class="crumina-portfolio-item">
+									<img src="{{item.image.main}}" alt="{{item.title}}" class="">
+									<div class="overlay-standard"></div>
+									<div class="content">
+										<a href="#" class="category">{{item.title}}</a>
+										<h5 class="portfolio-title">{{item.sub-title}}</h5>
 									</div>
-									<div class="teammembers-content">
-										<h2 class="teammembers-item-name">Holiday Greetings</h2>
-										<p>
-											Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-											Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-											lectorum augue duis dolore.
-										</p>
+									<div class="additional-info">
+										<a href="{{item.image.main}}" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg
+												class="woox-icon icon-arrow-right-line">
+												<use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use>
+											</svg></a>
 
-										<form class="contact-form login-form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScD_-xaPPMpcZujPSiUxT5c7PM5W_CDZZCkBxMgaUEcX-K7UA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
-						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<div class="form-group label-floating is-empty">
-									<label class="input-label control-label">Write your requirement here <abbr class="required" title="required">*</abbr></label>
-									<textarea class="form-control input--squared height-140" name="entry.1597997822" placeholder=""></textarea>
-								</div>
-							</div>
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-								<div class="form-group label-floating">
-									<label class="input-label control-label">What is your name? <abbr class="required" title="required">*</abbr></label>
-									<input class="form-control input--squared" type="text" name="entry.906018547">
-								</div>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<div class="form-group label-floating is-empty">
-									<label class="input-label control-label">Your email address <abbr class="required" title="required">*</abbr></label>
-									<input class="form-control input--squared" type="email" name="entry.450573189">
-								</div>
-							</div>
-
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<div class="form-group label-floating is-empty">
-									<label class="input-label control-label">Your phone number</label>
-									<input class="form-control input--squared" type="phone" name="entry.872304911">
-								</div>
-							</div>
-                        </div>
-                        <div class="row">
-							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<button class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit" value="send">send a message</button>
-							</div>
-
-						</div>
-					</form>
+										<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right js-open-popup">purchase<svg class="woox-icon icon-arrow-right-line">
+												<use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use>
+											</svg></a>
 									</div>
 								</div>
+
+								<!-- window-popup start -->
+								<div class='window-popup'>
+									<div class='content'>
+										<div class="teammember-details">
+											<a class='js-open-popup popup-close' href='#'>
+												<svg class="woox-icon icon-close">
+													<use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-close"></use>
+												</svg>
+											</a>
+											<div class="teammembers-thumb">
+												<ul class="slide">
+													<li class="first" id="main-{{forloop.index}}"><img src="{{item.image.main}}" alt="{{item.title}}"></li>
+													{% for img in item.image.sub %}
+													<li id="{{item.id}}-{{forloop.index}}"><img src="{{img}}" alt="{{item.title}}"></li>
+													{% endfor %}
+												</ul>
+												<ul class="thumbs">
+													<li><a href="#main-{{forloop.index}}"><img src="{{item.image.main}}"></a></li>
+													{% for img in item.image.sub %}
+													<li><a href="#{{item.id}}-{{forloop.index}}"><img src="{{img}}"></a></li>
+													{% endfor %}
+												</ul>
+
+											</div>
+											<div class="teammembers-content">
+												<h2 class="teammembers-item-name">{{item.title}}</h2>
+												<p>
+													{{item.description}}
+												</p>
+
+												<form class="contact-form login-form" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLScD_-xaPPMpcZujPSiUxT5c7PM5W_CDZZCkBxMgaUEcX-K7UA/formResponse" target="hidden_iframe" onsubmit="submitted=true;">
+													<div class="row">
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<div class="form-group label-floating is-empty">
+																<label class="input-label control-label">Write your requirement here <abbr class="required" title="required">*</abbr></label>
+																<textarea class="form-control input--squared height-140" name="entry.1597997822" placeholder=""></textarea>
+															</div>
+														</div>
+														<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+															<div class="form-group label-floating">
+																<label class="input-label control-label">What is your name? <abbr class="required" title="required">*</abbr></label>
+																<input class="form-control input--squared" type="text" name="entry.906018547">
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+															<div class="form-group label-floating is-empty">
+																<label class="input-label control-label">Your email address <abbr class="required" title="required">*</abbr></label>
+																<input class="form-control input--squared" type="email" name="entry.450573189">
+															</div>
+														</div>
+
+														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+															<div class="form-group label-floating is-empty">
+																<label class="input-label control-label">Your phone number</label>
+																<input class="form-control input--squared" type="phone" name="entry.872304911">
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+															<button class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit" value="send">send a message</button>
+														</div>
+
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div><!-- window-popup end -->
 							</div>
 						</div>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item birthday">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Birthday Cards</a>
-                                    <h5 class="portfolio-title">Birthday Card 1</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item holiday">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Holiday Greetings</a>
-                                    <h5 class="portfolio-title">Greeting 2</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item birthday">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Birthday Cards</a>
-                                    <h5 class="portfolio-title">Birthday Card 2</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item holiday">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Holiday Greetings</a>
-                                    <h5 class="portfolio-title">Greeting 3</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item resume">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Resume Designs</a>
-                                    <h5 class="portfolio-title">Resume Design 1</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item birthday">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Birthday Cards</a>
-                                    <h5 class="portfolio-title">Birthday Card 3</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 sorting-item resume">
-                            <div class="crumina-module crumina-portfolio-item">
-                                <img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt="The House Of Akshar" class="">
-                                <div class="overlay-standard"></div>
-                                <div class="content">
-                                    <a href="#" class="category">Resume Designs</a>
-                                    <h5 class="portfolio-title">Resume Design 2</h5>
-                                </div>
-                                <div class="additional-info">
-                                    <a href="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-
-                                    <a href="#" target="_blank" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">purchase<svg class="woox-icon icon-arrow-right-line"><use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-                                </div>
-                            </div>
-                        </div>
+						{% endfor %}
+						
 					</div>
-
 				</div>
-
 			</div>
 			<div class="row pb80">
 			</div>
@@ -246,7 +141,7 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 
 	{% include cta.html %}
 
-    <div class="popup" id="media-popup">
-        <iframe width="700" height="400" src="" frameborder="0" allowfullscreen></iframe>
-    </div>
+	<div class="popup" id="media-popup">
+		<iframe width="700" height="400" src="" frameborder="0" allowfullscreen></iframe>
+	</div>
 </div>
