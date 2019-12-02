@@ -29,6 +29,27 @@
 <script src="/assets/js/js-plugins/ion.rangeSlider.js"></script>
 <script src="/assets/js/pop-up.js"></script>
 
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+    $('.shop-slider ul').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.slider-nav ul'
+    });
+    $('.slider-nav ul').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      asNavFor: '.shop-slider ul',
+      centerMode: true,
+      focusOnSelect: true,
+      prevArrow: false,
+      nextArrow: false
+    });
+</script>
+
 <!-- FontAwesome 5.x.x JS -->
 
 <script defer src="/assets/fonts/fontawesome-all.js"></script>
