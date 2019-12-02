@@ -6,6 +6,7 @@
   image:
     main: /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
     sub:
+      - /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
       - /assets/img/portfolio/Legno-946x546.jpg
       - /assets/img/portfolio/Rotaty-Portfolio-946x546.jpg
       - /assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg
@@ -18,6 +19,7 @@
   image:
     main: /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
     sub:
+      - /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
       - /assets/img/portfolio/Legno-946x546.jpg
       - /assets/img/portfolio/Rotaty-Portfolio-946x546.jpg
       - /assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg
