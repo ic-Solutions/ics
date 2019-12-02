@@ -45,12 +45,6 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 										<h5 class="portfolio-title">{{item.sub-title}}</h5>
 									</div>
 									<div class="additional-info">
-<!--
-										<a href="{{item.image.main}}" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right zoom-image js-zoom-image">preview<svg
-												class="woox-icon icon-arrow-right-line">
-												<use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use>
-											</svg></a>
--->
 
 										<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right js-open-popup">preview<svg class="woox-icon icon-arrow-right-line">
 												<use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-arrow-right-line"></use>
@@ -68,41 +62,22 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 												</svg>
 											</a>
 											<div class="teammembers-thumb shop-img">
-                                                <!--  -->
-                                                <div class="shop-slider">
-                                                    <ul>
-                                                        <li><img src="/assets/img/portfolio/Legno-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg" alt=""></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="slider-nav">
-                                                     <ul>
-                                                        <li><img src="/assets/img/portfolio/Legno-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg" alt=""></li>
-                                                        <li><img src="/assets/img/portfolio/Rotaty-Portfolio-946x546.jpg" alt=""></li>
-                                                    </ul>
-                                                </div>
-                                                
-                                                <!--  -->
+               
+                          <div class="shop-slider">
+                              <ul>
+                                {% for img in item.image.sub %}
+                                  <li><img src="{{img}}" alt="{{item.title}}"></li>
+                                {% endfor %}
+                              </ul>
+                          </div>
+                          <div class="slider-nav">
+                                <ul>
+                                  {% for img in item.image.sub %}
+                                    <li><img src="{{img}}" alt="{{item.title}}"></li>
+                                  {% endfor %}
+                              </ul>
+                          </div>
 
-    
-												<ul class="slide">
-													<li class="first" id="main-{{forloop.index}}"><img src="{{item.image.main}}" alt="{{item.title}}"></li>
-													{% for img in item.image.sub %}
-													<li id="{{item.id}}-{{forloop.index}}"><img src="{{img}}" alt="{{item.title}}"></li>
-													{% endfor %}
-												</ul>
-												<ul class="thumbs">
-													<li><a href="#main-{{forloop.index}}"><img src="{{item.image.main}}"></a></li>
-													{% for img in item.image.sub %}
-													<li><a href="#{{item.id}}-{{forloop.index}}"><img src="{{img}}"></a></li>
-													{% endfor %}
-												</ul>
 											</div>
 											<div class="teammembers-content">
 												<h2 class="teammembers-item-name">{{item.title}}</h2>
