@@ -1,6 +1,8 @@
 - title: Holiday Greetings
   category: holiday
   sub-title: Greeting 1
+  price: 3500
+  sale-price: 3000
   description: Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum augue duis dolore.
   id: greeting-1
   image:
@@ -14,6 +16,8 @@
 - title: Birthday Cards
   category: birthday
   sub-title: Card 1
+  price: 3500
+  sale-price: 3000
   description: Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum augue duis dolore.
   id: greeting-2
   image:
