@@ -152,11 +152,32 @@ html{
         padding: 40px 0 0 40px;
     }
     @include media-query($on-palm){
-        padding: 20px 20px 0 20px;
+        padding: 60px 20px 0 20px;
     }
 }
 
 // Shop page slider
 .slider-nav li{
-    margin: 0 1em
+    margin: 0 1em;
+    cursor: pointer
+}
+.slick-prev {
+    left: 5% !important;
+    z-index: 9 !important;
+    &:before {
+        color: #00ffb3 !important
+    }
+}
+.slick-next{
+    right: 5% !important;
+    &:before {
+        color: #00ffb3 !important
+    }
+}
+.slick-slider{
+    padding: 0 !important
+}
+.slick-slide img{
+    border: solid 1px #d6d6d6;
+    border-radius: 10px;
 }
