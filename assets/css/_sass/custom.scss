@@ -147,7 +147,7 @@ html{
     }
 }
 .shop-img{
-    padding: 100px 0 0 100px;
+    padding: 100px 30px 0 70px;
     @include media-query($on-laptop){
         padding: 40px 0 0 40px;
     }
@@ -162,16 +162,31 @@ html{
     cursor: pointer
 }
 .slick-prev {
-    left: 5% !important;
-    z-index: 9 !important;
+    left: -4% !important;
     &:before {
         color: #00ffb3 !important
     }
+    @include media-query($on-laptop){
+        left: 5% !important;
+        z-index: 9 !important;
+    }
+    @include media-query($on-palm){
+        left: 5% !important;
+        z-index: 9 !important;
+    }
 }
 .slick-next{
-    right: 5% !important;
+    right: -4% !important;
     &:before {
         color: #00ffb3 !important
+    }
+    @include media-query($on-laptop){
+        right: 5% !important;
+        z-index: 9 !important;
+    }
+    @include media-query($on-palm){
+        right: 5% !important;
+        z-index: 9 !important;
     }
 }
 .slick-slider{
