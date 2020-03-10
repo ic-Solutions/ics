@@ -1,29 +1,23 @@
-- title: Holiday Greetings
-  category: holiday
-  sub-title: Greeting 1
+- title: Festival Greetings
+  category: festival
+  sub-title: Greetings for whole year!
   price: 3500
   sale-price: 3000
-  description: Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum augue duis dolore.
+  description: Wish your friends, clients and colleagues with your own customised designs. Get this Festival Greetings pack (any 10 festival greetings) which you can use for the whole year!
   id: greeting-1
   image:
-    main: /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
+    main: /assets/img/shop/festival-greetings/festival-featured.jpg
     sub:
-      - /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
-      - /assets/img/portfolio/Legno-946x546.jpg
-      - /assets/img/portfolio/Rotaty-Portfolio-946x546.jpg
-      - /assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg
+      - /assets/img/shop/festival-greetings/001new-year.png
+      - /assets/img/shop/festival-greetings/002republic-day.png
+      - /assets/img/shop/festival-greetings/003valentine-day.png
+      - /assets/img/shop/festival-greetings/004womens-day.png
+      - /assets/img/shop/festival-greetings/005holi.png
+      - /assets/img/shop/festival-greetings/006eid.png
+      - /assets/img/shop/festival-greetings/007environment-day.png
+      - /assets/img/shop/festival-greetings/008gandhi-jayanti.png
+      - /assets/img/shop/festival-greetings/009dusshera-2.png
+      - /assets/img/shop/festival-greetings/010diwali.png
+      - /assets/img/shop/festival-greetings/011kannada-rajyotsava.png
 
-- title: Birthday Cards
-  category: birthday
-  sub-title: Card 1
-  price: 3500
-  sale-price: 3000
-  description: Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum augue duis dolore.
-  id: greeting-2
-  image:
-    main: /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
-    sub:
-      - /assets/img/portfolio/the-house-of-akshar-Portfolio-946x546.jpg
-      - /assets/img/portfolio/Legno-946x546.jpg
-      - /assets/img/portfolio/Rotaty-Portfolio-946x546.jpg
-      - /assets/img/portfolio/Rotaty2-Portfolio-946x546.jpg
+
