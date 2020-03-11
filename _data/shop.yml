@@ -20,4 +20,111 @@
       - /assets/img/shop/festival-greetings/010diwali.png
       - /assets/img/shop/festival-greetings/011kannada-rajyotsava.png
 
+- title: Agency Website
+  category: website
+  sub-title: Website Templates
+  price: 12000
+  sale-price: 10000
+  hosting: yes
+  description: Avana a creative & modern html theme specifically designed for making modern websites dedicated to any kind of agency. It supports responsive layout so it looks great on all devices. We will create stunning presentations of your work or any other aspect of your digital agency. 
+  link: https://agency-0111.firebaseapp.com/
+  id: template-1
+  image:
+    main: /assets/img/shop/web-templates/agency/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/agency/001.jpg
+      - /assets/img/shop/web-templates/agency/002.jpg
+      - /assets/img/shop/web-templates/agency/003.jpg
+      - /assets/img/shop/web-templates/agency/004.jpg
 
+- title: Personal Blog
+  category: website
+  sub-title: Website Templates
+  price: 10000
+  sale-price: 8000
+  hosting: yes
+  description: Fantom Blog a creative & modern html theme specifically designed for making modern websites dedicated to any kind of blogs. It supports responsive layout so it looks great on all devices. We will create stunning presentations of your personal blog.
+  link: https://blog-website-0111.firebaseapp.com/
+  id: template-2
+  image:
+    main: /assets/img/shop/web-templates/blog/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/blog/001.jpg
+      - /assets/img/shop/web-templates/blog/002.jpg
+      - /assets/img/shop/web-templates/blog/003.jpg
+      - /assets/img/shop/web-templates/blog/004.jpg
+      - /assets/img/shop/web-templates/blog/005.jpg
+      - /assets/img/shop/web-templates/blog/006.jpg
+      - /assets/img/shop/web-templates/blog/007.jpg
+      - /assets/img/shop/web-templates/blog/008.jpg
+      - /assets/img/shop/web-templates/blog/009.jpg
+      
+- title: Books website
+  category: website
+  sub-title: Website Templates
+  price: 10000
+  sale-price: 7000
+  hosting: yes
+  description: Show is a single landing page for promoting and selling your books and ebooks. It supports responsive layout so it looks great on all devices. We will create stunning presentations of your books portfolio.
+  link: https://book-launch-0111.firebaseapp.com/
+  id: template-3
+  image:
+    main: /assets/img/shop/web-templates/books/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/books/001.jpg
+      - /assets/img/shop/web-templates/books/002.jpg
+      - /assets/img/shop/web-templates/books/003.jpg
+      - /assets/img/shop/web-templates/books/004.jpg
+      - /assets/img/shop/web-templates/books/005.jpg
+      - /assets/img/shop/web-templates/books/006.jpg
+      - /assets/img/shop/web-templates/books/007.jpg
+      
+- title: Photography website
+  category: website
+  sub-title: Website Templates
+  price: 13000
+  sale-price: 10000
+  hosting: yes
+  description: It is a responsive clean and minimal html theme for Photography Portfolio websites. Built with the latest technology. It supports responsive layout so it looks great on all devices. We will create stunning presentations of your photography portfolio.
+  link: https://photography-0111.firebaseapp.com/
+  id: template-4
+  image:
+    main: /assets/img/shop/web-templates/photography/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/photography/001.jpg
+      - /assets/img/shop/web-templates/photography/002.jpg
+      - /assets/img/shop/web-templates/photography/003.jpg
+
+- title: Portfolio website
+  category: website
+  sub-title: Website Templates
+  price: 12500
+  sale-price: 10000
+  hosting: yes
+  description: It is a responsive clean html theme for Portfolio websites. Built with the latest technology, it supports responsive layout so it looks great on all devices. We will create stunning presentations of your portfolio.
+  link: https://portfolio-0111.firebaseapp.com/
+  id: template-5
+  image:
+    main: /assets/img/shop/web-templates/portfolio/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/portfolio/001.jpg
+      - /assets/img/shop/web-templates/portfolio/002.jpg
+      - /assets/img/shop/web-templates/portfolio/003.jpg
+      - /assets/img/shop/web-templates/portfolio/004.jpg
+
+- title: Resume website
+  category: website
+  sub-title: Website Templates
+  price: 6000
+  sale-price: 4000
+  hosting: yes
+  description: Having a digital resume of your Education and Works is the need of the hour. Built with the latest technology, it supports responsive layout so it looks great on all devices. We will create stunning presentations of your resume.
+  link: https://fantastic-resume.firebaseapp.com/
+  id: template-6
+  image:
+    main: /assets/img/shop/web-templates/resume/001.jpg
+    sub:
+      - /assets/img/shop/web-templates/resume/001.jpg
+      - /assets/img/shop/web-templates/resume/002.jpg
+      - /assets/img/shop/web-templates/resume/003.jpg
+      - /assets/img/shop/web-templates/resume/004.jpg
