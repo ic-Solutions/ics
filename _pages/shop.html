@@ -83,18 +83,14 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 											<div class="teammembers-content">
 												<h2 class="teammembers-item-name">{{item.title}}</h2>
 												<h4 class="sale-price"><strike class="price">{{item.price}} ₹</strike> {{item.sale-price}} ₹</h4>
-												{% if item.hosting == null %}
-												
-												{% else if item.hosting == yes %}
-												<p>* Pricing includes 6 months free hosting for the website !</p>
+												{% if item.hosting != null == yes %}												
+												    <p>* Pricing includes 6 months free hosting for the website !</p>
 												{% endif %}
 												<p>
 													{{item.description}}													
 												</p>
-												{% if item.link == null %}
-												
-												{% else %}
-												<p><a href="{{item.link}}" target="_blank">Demo Website Link</a></p>
+												{% if item.link != null %}												
+												    <p><a href="{{item.link}}" target="_blank">Demo Website Link</a></p>
 												{% endif %}
 												<p>Enter your contact details here and we will reach you to get your requirements.</p>
 												
