@@ -83,8 +83,8 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 											<div class="teammembers-content">
 												<h2 class="teammembers-item-name">{{item.title}}</h2>
 												<h4 class="sale-price"><strike class="price">{{item.price}} ₹</strike> {{item.sale-price}} ₹</h4>
-												{% if item.hosting != null == yes %}												
-												    <p>* Pricing includes 6 months free hosting for the website !</p>
+												{% if item.hosting %}												
+													<p>* Pricing includes 6 months free hosting for the website !</p>
 												{% endif %}
 												<p>
 													{{item.description}}													
