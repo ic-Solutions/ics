@@ -8,18 +8,18 @@
   image:
     main: /assets/img/shop/festival-greetings/festival-featured-new-3.jpg
     sub:
-      - /assets/img/shop/festival-greetings/001new-year.png
-      - /assets/img/shop/festival-greetings/002republic-day.png
-      - /assets/img/shop/festival-greetings/003valentine-day.png
-      - /assets/img/shop/festival-greetings/004womens-day.png
-      - /assets/img/shop/festival-greetings/005holi.png
-      - /assets/img/shop/festival-greetings/006labours-day.png
-      - /assets/img/shop/festival-greetings/007eid.png
-      - /assets/img/shop/festival-greetings/008environment-day.png
-      - /assets/img/shop/festival-greetings/009gandhi-jayanti.png
-      - /assets/img/shop/festival-greetings/010dusshera-2.png
-      - /assets/img/shop/festival-greetings/011diwali.png
-      - /assets/img/shop/festival-greetings/012kannada-rajyotsava.png
+      - /assets/img/shop/festival-greetings/001.png
+      - /assets/img/shop/festival-greetings/002.png
+      - /assets/img/shop/festival-greetings/003.png
+      - /assets/img/shop/festival-greetings/004.png
+      - /assets/img/shop/festival-greetings/005.png
+      - /assets/img/shop/festival-greetings/006.png
+      - /assets/img/shop/festival-greetings/008.png
+      - /assets/img/shop/festival-greetings/009.png      
+      - /assets/img/shop/festival-greetings/010.png
+      - /assets/img/shop/festival-greetings/011.png
+      - /assets/img/shop/festival-greetings/012.png
+      - /assets/img/shop/festival-greetings/013.png
 
 - title: Agency Website
   category: website
