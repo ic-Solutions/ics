@@ -1,5 +1,8 @@
-ruby RUBY_VERSION
+source "https://rubygems.org"
 
-# This will help ensure the proper Jekyll version is running.
-gem "jekyll", "4.2"
-gem "jekyll-seo-tag"
+gem "jekyll"
+
+group :jekyll_plugins do
+  gem "jekyll-feed"
+  gem "jekyll-seo-tag"
+end
