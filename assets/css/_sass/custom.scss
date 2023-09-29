@@ -98,7 +98,7 @@ html{
 }
 .site-logo img {
     @include media-query($on-palm){
-        max-width: 50px;
+        max-width: 70px;
     }
 }
 //Mobile section ribbon for projects in home page
