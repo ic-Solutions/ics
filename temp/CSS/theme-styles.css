@@ -3858,7 +3858,7 @@ img.mfp-img {
 
 @media (max-width: 768px) {
   .overlay-menu-item {
-    font-size: 30px; }
+    font-size: 50px; }
     .overlay-menu-item .sub-menu {
       top: auto;
       left: auto;
