@@ -328,14 +328,15 @@
 
 .crumina-slider--info-boxes {
   position: relative;
-  padding: 120px 240px 120px 120px;
+  padding: 60px 180px 60px 60px;
   background-color: $white-color;
   box-shadow: 5px 0 60px 0 rgba(61,67,79,.08);
   border-radius: 40px;
+  height: 80vh !important;
 
   .swiper-btn-wrap {
 	position: absolute;
-	right: 120px;
+	right: 60px;
 	top: 50%;
 	transform: translate(0, -50%);
   }

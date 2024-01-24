@@ -383,7 +383,7 @@ ul ol li {
 
 blockquote {
   margin: 1em 0;
-  padding: 80px;
+  padding: 20px;
   position: relative;
   font-family: 'Playfair Display', serif;
   font-style: italic;
@@ -418,8 +418,6 @@ blockquote {
     width: 80px;
     height: 90px;
     position: absolute;
-    top: 50px;
-    left: 40px;
     display: block;
     background: url("../svg-icons/quote-icon.svg") 50% 50% no-repeat;
     background-size: contain;
@@ -427,12 +425,28 @@ blockquote {
   }
 
   p {
-    margin: 0 0 40px;
-    font-size: 30px;
+    padding: 20px 20px 0px 20px;
+    font-size: 25px;
     line-height: 1.6em;
     color: $secondary-color;
     z-index: 2;
     position: relative;
+    max-height: 30vh;
+    overflow: hidden; 
+  }
+
+  button {
+    color: #00ffb3;
+    font-size: 25px;
+    line-height: 1.6em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0px 20px 20px 20px;
+  }
+
+  button:hover{
+    text-decoration: underline;
   }
 }
 
@@ -477,10 +491,11 @@ blockquote {
 
 @media (max-width: 768px) {
   blockquote {
-    padding: 30px;
+    padding-top: none;
     text-align: center;
 
     P {
+      padding-top: none;
       font-size: 18px;
     }
 
