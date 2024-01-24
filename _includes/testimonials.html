@@ -1,0 +1,80 @@
+<section>
+  <div class="container">
+    <div class="">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 pt80">
+        <header class="">
+          <h2 class="heading-title link--with-decoration align-center">What our clients say</h2>
+        </header>
+        <div class="crumina-module crumina-module-slider crumina-slider--info-boxes">
+          <div class="swiper-btn-wrap">
+            <div class="swiper-btn-next">
+              <svg class="woox-icon icon-line-arrow-right">
+                <use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-line-arrow-right"></use>
+              </svg>
+              <svg class="woox-icon icon-hover icon-line-arrow-right">
+                <use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-line-arrow-right"></use>
+              </svg>
+            </div>
+
+            <div class="swiper-btn-prev">
+              <svg class="woox-icon icon-line-arrow-left">
+                <use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-line-arrow-left"></use>
+              </svg>
+              <svg class="woox-icon icon-hover icon-line-arrow-left">
+                <use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-line-arrow-left"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="swiper-container auto-height swiper-unique-id-0 initialized swiper-container-initialized swiper-container-horizontal" data-show-items="1" data-prev-next="1" id="swiper-unique-id-0">
+            <div class="swiper-wrapper" style="transform: translate3d(-1770px, 0px, 0px); transition-duration: 0ms;">
+              {% for item in site.data.reviews %}
+              <div class="swiper-slide" data-swiper-slide-index="0">
+                <div class="container" style="width:fit-content;">
+                  <blockquote>
+                    <p>{{ item.thoughts | split: " " | slice: 0,50 | join: " " }} <a class="post-link" data-toggle="modal" data-target="#exampleModal"></a>...read more</a></p>
+                    <div class="author-block">
+                      <img class="avatar" src="{{ item.profile }}" alt="avatar" style="object-fit: contain;">
+                      <div class="author-content">
+                        <a href="#" class="author-name">{{ item.author }}</a>
+                        <div class="author-prof">
+                          {% for i in (1..item.score) %}
+                            <i aria-hidden="true" class="fa fa-star c-yellow"></i>
+                          {% endfor %}
+                        </div>
+                      </div>
+                    </div>
+                  </blockquote>
+
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+		            </div>
+              </div>
+              {% endfor %}
+
+            </div>
+          <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
