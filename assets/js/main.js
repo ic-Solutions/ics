@@ -316,7 +316,7 @@ var CRUMINA = {};
 				slidesPerGroup: ( $swiper.data( 'scroll-items' ) ) ? $swiper.data( 'scroll-items' ) : 1,
 				spaceBetween: ( $swiper.data( 'space-between' ) || $swiper.data( 'space-between' ) == 0 ) ? $swiper.data( 'space-between' ) : 20,
 				centeredSlides: ( $swiper.data( 'centered-slider' ) ) ? $swiper.data( 'centered-slider' ) : false,
-				autoplay: ( $swiper.data( 'autoplay' ) ) ? parseInt( $swiper.data( 'autoplay' ), 10 ) : 0,
+				autoplay: ( $swiper.data( 'autoplay' ) ) ? {delay: parseInt( $swiper.data( 'autoplay' ), 10 )} : 0,
 				autoHeight: ( $swiper.hasClass( 'auto-height' ) ) ? true : false,
 				loop: ( $swiper.data( 'loop' ) == false ) ? $swiper.data( 'loop' ) : true,
 				effect: ( $swiper.data( 'effect' ) ) ? $swiper.data( 'effect' ) : 'slide',
