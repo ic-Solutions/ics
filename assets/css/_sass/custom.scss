@@ -215,3 +215,85 @@ html{
 .mb-2{
     margin-bottom: 2em
 }
+
+.my-modal {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(10px);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+
+    &:target {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    &__content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 75%;
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 2rem 4rem rgba(black, .2);
+      border-radius: 10px;
+      overflow: hidden; // This will keep the images sharp corners from protruding past the border-radius
+    
+      .button{
+        float:right;
+        font-size: large;
+        padding: 10px;
+      }
+
+      .button:hover{
+        color:#00ffb3;
+      }
+
+      .author{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        .profile{
+            width: 10%;
+            object-fit: contain;
+        }
+      }
+    }
+  
+    &__text {
+      max-height: 50vh;
+      overflow-y: scroll;
+      font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) {
+  .my-modal{
+    &__content {      
+        width: 85%;
+
+        .button{
+          padding: 0px;
+        }
+  
+        .author{
+          gap: 10px;
+
+          .profile{
+              width: 30%;
+          }
+        }
+      }
+    
+      &__text {
+        font-size: 0.9rem;
+      }
+    }
+  }

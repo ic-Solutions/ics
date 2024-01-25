@@ -435,17 +435,17 @@ blockquote {
     overflow: hidden; 
   }
 
-  button {
+  .button {
     color: #00ffb3;
     font-size: 25px;
-    line-height: 1.6em;
+    line-height: 1.5em;
     background: none;
     border: none;
     cursor: pointer;
     padding: 0px 20px 20px 20px;
   }
 
-  button:hover{
+  .button:hover{
     text-decoration: underline;
   }
 }
@@ -491,19 +491,24 @@ blockquote {
 
 @media (max-width: 768px) {
   blockquote {
-    padding-top: none;
+    padding-top: 0px;
     text-align: center;
 
     P {
-      padding-top: none;
-      font-size: 18px;
+      padding: 0px;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .button{
+      font-size: 14px;
     }
 
     &:before {
       width: 40px;
       height: 50px;
-      top: 30px;
-      left: 30px;
+      top: 0px;
+      left: 15px;
     }
   }
 }
