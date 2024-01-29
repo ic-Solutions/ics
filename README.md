@@ -1,4 +1,4 @@
-# ics
+# ICS
 
 Delete Gemfile & Gemfile.lock files
 
