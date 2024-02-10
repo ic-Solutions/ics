@@ -783,6 +783,13 @@ a img.aligncenter {
 }
 
 @media (max-width: 425px) {
+  .post-standard-details{
+    .post-quote{
+      margin: 2px;
+      font-size: smaller;
+    }
+  }
+
   .post.post--wide{
     padding: 0;
     font-size: smaller;
