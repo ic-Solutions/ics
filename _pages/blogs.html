@@ -9,11 +9,11 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
 		<div class="container">
 			<div class="row medium-padding120">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<header class="crumina-module crumina-heading heading--h2 heading--with-decoration align-center">
+				<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+					<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
 						<div class="heading-sup-title">Blog</div>
-						<h2 class="heading-title">Explore to <b>Expand</b> your horizons</h2>
-						<div class="heading-text">Peruse our curated and expert written content to discover the insights that best align with your needs.</div>
+						<h2 class="heading-title heading--half-colored">Explore to <b>Expand</b> your horizons</h2>
+						<div class="heading-text">Peruse our curated and expert written content to gain insights that best align with your needs.</div>
 					</header>
 				</div>
 			</div>
@@ -21,12 +21,13 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 	</section>
 
 	<section class="post--wide-wrap pt120">
-		<div class="container">
+		<div class="px-5">
 			<div class="row">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+					<h3 class="heading-title px-5">Latest Posts</h3>
 					{% for post in site.posts%}
 					
-					<article class="hentry post post-standard has-post-thumbnail sticky  post--wide">
+					<article class="hentry post post-standard has-post-thumbnail sticky post--wide .digimarket">
 
 						<div class="post-thumb">
 							<img src="{{post.thumbnail}}" alt="post">
@@ -67,9 +68,52 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 						</div>
 
 					</article>
-					<hr class="divider divider--style10">
+					<!-- <hr class="divider divider--style10"> -->
 					
 					{% endfor %}
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position:sticky; top:120px">
+					<aside class="widget w-popular-tags">
+						<h5 class="pb-2">Popular tags</h5>
+						<ul class="tags-list">
+							<li>
+								<a href="#">Website Development</a>
+							</li>
+							<li>
+								<a href="#">SEO</a>
+							</li>
+							<li>
+								<a href="#">UI/UX</a>
+							</li>
+							<li>
+								<a href="#">Digital Marketing</a>
+							</li>
+						</ul>
+					</aside>  
+					<aside class="widget w-shared-posts" >
+						<svg class="woox-icon icon-wave wave-line">
+							<use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use>
+						</svg>
+						<h5 class="">Featured Posts</h5>
+						<ul class="list-shared-post">
+							{% for post in site.posts %}
+							<li>
+								<article class="hentry post-shared">
+									<div class="post-thumb">
+										<img src="{{ post.thumbnail }}" alt="post" style="height:100%; object-fit:cover;">
+									</div>
+									<div class="post__content">
+										<a href="#" class="category">{{ post.category | join: " " }}</a>
+										<a href="{{ post.url }}" class="h6 post__title entry-title">{{ post.blog-title }}</a>
+										<div class="share-counter pl-1">by {{ post.author }}</div>
+									</div>
+								</article>
+								<!-- <hr class="divider divider--style10"> -->
+							</li>
+							{% endfor %}
+						</ul>
+					</aside>
+
 				</div>
 			</div>
 		</div>

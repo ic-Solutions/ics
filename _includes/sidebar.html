@@ -1,6 +1,98 @@
 <!-- Sidebar -->
-<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: sticky; top:50px;">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: sticky; top:120px;">
     <aside aria-label="sidebar" class="sidebar sidebar-left">
+<!-- 
+        <aside class="widget w-popular-products crumina-module crumina-module-slider pagination-bottom-center">
+            <svg class="woox-icon icon-wave wave-line">
+                <use xlink:href="/assets/svg-icons/sprites/icons.svg#icon-wave"></use>
+            </svg>
+            <h5 class="widget-title">Featured posts</h5>
+            <div class="swiper-container">
+
+                <div class="swiper-wrapper">
+                    {% for post in site.posts %}
+                    <div class="swiper-slide">
+                        <article class="hentry post post-standard has-post-thumbnail sticky" style="padding:0">
+
+                            <div class="post-thumb">
+                                <img src="{{ post.thumbnail }}" alt="post" style="object-fit:cover; height: 300px;">
+                                <div class="overlay overlay-blog"></div>
+                            </div>
+
+                            <div class="post__content">
+
+                                <div class="">
+
+                                    <a href="#" class="category">{{ post.category | join: " "}}</a>
+
+                                    <a href="{{ post.url }}" class="post__title entry-title" style="margin: 0;">{{ post.blog-title }}</a>
+
+                                    <div class="post-additional-info">
+
+                                        <div class="post-comments-date-wrap" style="margin: 0;">
+                                            <div class="post__date">
+                                                <time class="published" datetime="2018-02-03 12:00:00">
+                                                    {{ post.date | date: "%b %-d, %Y" }}
+                                                </time>
+                                            </div>
+                                        </div>
+
+                                        <div class="author vcard" style="display:flex;">
+                                            <img class="avatar" src="/assets/img/user.png" alt="avatar">
+                                            <div class="author-content">
+                                                <div class="author-prof">posted by</div>
+                                                <a href="#" class="author-name fn">{{ post.author }}</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </article>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+             If we need pagination
+            <div class="swiper-pagination"></div>
+        </aside>  -->
+
+        <aside class="widget w-popular-tags">
+            <h5 class="pb-2">Popular tags</h5>
+            <ul class="tags-list">
+                <li>
+                    <a href="#">Website Development</a>
+                </li>
+                <li>
+                    <a href="#">SEO</a>
+                </li>
+                <li>
+                    <a href="#">UI/UX</a>
+                </li>
+                <li>
+                    <a href="#">Digital Marketing</a>
+                </li>
+            </ul>
+        </aside>  
+
+        <aside class="widget w-subscribe">
+            <form method="post" action="send_mail.php">
+                <h4 class="title">Subscribe</h4>
+                <p>Subscribe now to get notified about our new blogs!</p>
+
+                <input type="email" value="" placeholder="Your E-mail Address">
+
+                <button class="btn btn--medium btn--secondary full-width">subscribe now!</button>
+
+                <p>Don't worry, we don't spam!</p>
+            </form>
+        </aside>
+
+    </aside>
+</div>
+<!-- End Sidebar -->
 
         <!-- <aside class="widget w-about">
             <a href="index.html" class="site-logo">
@@ -159,75 +251,30 @@
             </ul>
         </aside> -->
         
-        <aside class="widget w-popular-products crumina-module crumina-module-slider pagination-bottom-center">
-            <svg class="woox-icon icon-wave wave-line">
-                <use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use>
-            </svg>
-            <h5 class="widget-title">Featured posts</h5>
-            <div class="swiper-container">
-
-                <div class="swiper-wrapper">
-                    {% for post in site.posts %}
-                    <div class="swiper-slide">
-                        <article class="hentry post post-standard has-post-thumbnail sticky">
-
-                            <div class="post-thumb">
-                                <img src="{{ post.thumbnail }}" alt="post" style="object-fit:cover; height: 200px;">
-                                <div class="overlay overlay-blog"></div>
-                            </div>
-
-                            <div class="post__content">
-
-                                <div class="">
-
-                                    <a href="#" class="category">{{ post.category | join: " "}}</a>
-
-                                    <a href="{{ post.url }}" class="post__title entry-title" style="margin: 0;">{{ post.blog-title }}</a>
-
-                                    <div class="post-additional-info">
-
-                                        <div class="post-comments-date-wrap" style="margin: 0;">
-                                            <div class="post__date">
-                                                <time class="published" datetime="2018-02-03 12:00:00">
-                                                    {{ post.date | date: "%b %-d, %Y" }}
-                                                </time>
-                                            </div>
-                                        </div>
-
-                                        <div class="author vcard" style="display:flex;">
-                                            <img class="avatar" src="/assets/img/user.png" alt="avatar">
-                                            <div class="author-content">
-                                                <div class="author-prof">posted by</div>
-                                                <a href="#" class="author-name fn">{{ post.author }}</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </article>
-                    </div>
-                    {% endfor %}
-                </div>
-            </div>
-
-             <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-        </aside> 
-        
-        <aside class="widget w-subscribe">
-            <form method="post" action="send_mail.php">
-                <h4 class="title">Subscribe</h4>
-                <p>Subscribe now to get notified about exclusive offers from Woox every week!</p>
-
-                <input type="email" value="" placeholder="Your E-mail Address">
-
-                <button class="btn btn--medium btn--secondary full-width">subscribe now!</button>
-
-                <p>Don't worry, we don't spam!</p>
-            </form>
-        </aside>
+        <!-- <aside class="widget w-socials-subscriber">
+            <ul class="list-socials-subscriber">
+                <li class="subscriber-item bg-facebook">
+                    <i class="woox-icon fab fa-facebook-square"></i>
+                    <div class="subscriber-count">982<span>Likes</span></div>
+                    <a href="#" class="join-follow">Like</a>
+                </li>
+                <li class="subscriber-item bg-twitter">
+                    <i class="woox-icon fab fa-twitter"></i>
+                    <div class="subscriber-count">6.3k<span>Followers</span></div>
+                    <a href="#" class="join-follow">Follow</a>
+                </li>
+                <li class="subscriber-item bg-instagram">
+                    <i class="woox-icon fab fa-instagram"></i>
+                    <div class="subscriber-count">5.8k<span>Followers</span></div>
+                    <a href="#" class="join-follow">Follow</a>
+                </li>
+                <li class="subscriber-item bg-googleplus">
+                    <i class="woox-icon fab fa-google-plus-g"></i>
+                    <div class="subscriber-count">260<span>Fans</span></div>
+                    <a href="#" class="join-follow">Like</a>
+                </li>
+            </ul>
+        </aside> -->
 
         <!-- <aside class="widget w-latest-news">
             <svg class="woox-icon icon-wave wave-line">
@@ -589,27 +636,6 @@
             <input class="standard-datetimepicker" type="text">
         </aside> -->
 
-        <aside class="widget w-popular-tags">
-            <svg class="woox-icon icon-wave wave-line">
-                <use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use>
-            </svg>
-            <h5 class="widget-title">Popular tags</h5>
-            <ul class="tags-list">
-                <li>
-                    <a href="#">Digital Marketing</a>
-                </li>
-                <li>
-                    <a href="#">SEO</a>
-                </li>
-                <li>
-                    <a href="#">UI/UX</a>
-                </li>
-                <li>
-                    <a href="#">WordPress</a>
-                </li>
-            </ul>
-        </aside>
-
         <!-- <aside class="widget w-socials-subscriber">
             <ul class="list-socials-subscriber">
                 <li class="subscriber-item bg-facebook">
@@ -634,8 +660,3 @@
                 </li>
             </ul>
         </aside> -->
-
-
-    </aside>
-</div>
-<!-- End Sidebar -->

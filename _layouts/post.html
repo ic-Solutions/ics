@@ -11,725 +11,384 @@ layout: compress
 {% include menu.html %}
 
 <div class="main-content-wrapper">
-    <section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
-        <div class="container">
-            <div class="row medium-padding120">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <header class="crumina-module crumina-heading heading--h2 heading--with-decoration align-center">
-                        <p><a href="#" class="link--with-decoration"> {{ page.categories | join: "|" }} </a></p>
-                        <!-- <ul class="breadcrumbs">
-                            <li class="breadcrumbs-item">
-                                <a href="#">blog</a>
-                            </li>
-                            <li class="breadcrumbs-item active">
-                                <span>single post</span>
-                            </li>
-                        </ul> -->
-                        <h2 class="heading-title heading--half-colored">{{ page.blog-title }}</h2>
-                        <div class="heading-text">{{ page.phrase }}</div>
     
-                            <div class="post-comments-date-wrap">
-                                <div class="post__author-name fn">
-                                    <a href="#" class="post__author-link">{{ page.author }} </a>
-                                </div>
-                                <div class="post__date">
-                                    <time class="published" datetime="2018-03-26 12:00:00">
-                                        {{ page.date | date: "%b %-d, %Y" }}
-                                    </time>
-                                </div>
-
-                                <!-- <div class="post__comments">
-                                    <a href="#">16 Comments</a>
-                                </div> -->
-                            </div>
-                    </header>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
-        <div class="container">
-            <div class="row medium-padding120">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <header class="crumina-module crumina-heading heading--h2 heading--with-decoration no-margin">
-                        <ul class="breadcrumbs">
-                            <li class="breadcrumbs-item">
-                                <a href="#">{{ page.categories | join: "|" }}</a>
-                            </li>
-                            
-                        </ul>
-                        <h2 class="heading-title heading--half-colored">{{ page.blog-title }}</h2>
-                        <div class="heading-text">{{ page.phrase }}</div>
-                        <div class="post-additional-info">
-    
-                            <div class="post-comments-date-wrap">
-                                <div class="post__author-name fn">
-                                    by
-                                    <a href="#" class="post__author-link">{{ page.author }} </a>
-                                </div>
-
-                                <div class="post__date">
-                                    <time class="published" datetime="2018-03-26 12:00:00">
-                                        {{ page.date | date: "%b %-d, %Y" }}
-                                    </time>
-                                </div>
-
-                                <!-- <div class="post__comments">
-                                    <a href="#">16 Comments</a>
-                                </div> -->
-                            </div>
-
-                        </div>
-                    </header>
-                </div>
-            </div>
-        </div>
-    </section>
     
     <section>
-        <div class="container">
-            <div class="row">
-    
-                <!-- Blog post Details -->
-                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <article class="hentry post post-standard has-post-thumbnail post-standard-details">
-                        <!-- <div class="post-thumb">
-                            <img src="{{ page.thumbnail }}" alt="post">
-                        </div>
-    
-                        <div class="post__content">
-    
-                            <p class="weight-bold c-secondary">Odio morbi quis commodo odio aenean sed. Proin sagittis nisl
-                                rhoncus mattis rhoncus urna neque viverra. Magna sit amet purus gravida quis blandit.
-                                Ornare quam viverra orci sagittis eu. Purus viverra accumsan in nisl nisi scelerisque
-                                eu ultrices. Non odio euismod lacinia at quis risus sed vulputate.
-                            </p>
-                            <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
-                                litterarum
-                                formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc
-                                nobis videntur parum clari, fiant sollemnes in futurum. Nam liber tempor cum soluta nobis
-                                eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum
-                                minim
-                                veniam, quis nostrud nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer
-                                adipiscing elit.
-                            </p>
-    
-                            <blockquote>
-                                <p>Qel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
-                                    dolore eu
-                                    feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-                                    praesent
-                                    luptatum zzril delenit augue.
-                                </p>
-                                <h6>
-                                    Philip Demarco
-                                    <span>founder of agency</span>
-                                </h6>
-                            </blockquote>
-    
-                            <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
-                                Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
-                                porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
-                                dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus
-                                sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a erat nam at.
-                                Sagittis aliquam malesuada bibendum arcu vitae elementum cura
-                            </p>
-    
-                            <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
-                                Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla
-                                facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh
-                                praesent tristique. Leo integer malesuada nunc.
-                            </p>
-    
-                            <div class="wp-caption alignleft">
-                                <img src="assets/img/blog20.jpg" alt="blog">
-                            </div>
-    
-                            <h5>Investigationes demonstraverunt lectores legere me lius</h5>
-    
-                            <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
-                                Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla
-                                facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh
-                                praesent tristique. Leo integer malesuada nunc.
-                            </p>
-    
-                            <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
-                                Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
-                                porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
-                                dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus
-                                sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a erat nam at.
-                                Sagittis aliquam malesuada bibendum arcu vitae elementum cura
-                            </p>
-    
-                            <div class="wp-caption alignnone">
-                                <img src="assets/img/blog21.jpg" alt="blog">
-                                <div class="wp-caption-text">In mollis nunc sed id semper risus in.<span> © photo by</span>
-                                    <a href="#" class="link--with-decoration">Philip Demarco</a></div>
-                            </div>
-    
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <p>Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
-                                        Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
-                                        Cursus turpis massa tincidunt dui ut ornare lectus sit. In aliquam sem fringilla
-                                        ut morbi tincidunt. Non consectetur a erat nam at. Sagittis aliquam malesuada
-                                        bibendum arcu vitae elementum curabitur.
-                                    </p>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
-                                        Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in.
-                                        Nulla facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget
-                                        aliquet nibh praesent tristique. Leo integer malesuada nunc.
-                                    </p>
-                                </div>
-                            </div>
-    
-                            <div class="wp-caption alignright">
-                                <img src="assets/img/blog22.jpg" alt="blog">
-                            </div>
-    
-                            <h5>INVESTIGATIONES DEMONSTRAVERUNT LECTORES</h5>
-                            <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Pharetra diam
-                                sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla facilisi cras
-                                fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh praesent tristique.
-                                Leo integer malesuada nunc.
-                            </p>
-    
-                            <p>Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
-                                porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices
-                                gravida dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut
-                                ornare lectus sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a
-                                erat nam at. Sagittis aliquam malesuada bibendum.
-                            </p>
-    
-                            <h5>Qectores legere me lius quod laritas est etiam processus</h5>
-    
-                            <p>Scelerisque fermentum dui faucibus in ornare. Arcu cursus euismod quis viverra nibh cras
-                                pulvinar mattis. Ornare massa eget egestas purus viverra accumsan in. Metus dictum at tempor
-                                commodo ullamcorper a lacus vestibulum. A pellentesque sit amet porttitor eget dolor morbi.
-                                Diam quam nulla porttitor massa id neque aliquam vestibulum. Consequat mauris nunc congue
-                                nisi vitae suscipit.
-                            </p>
-    
-                            <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
-                                placerat facer possim assum minim veniam, quis nostrud nostrud exerci tation.</p>
-    
-                            <ul>
-                                <li>
-                                    <strong>Nam liber tempor cum soluta nobis eleifend option. </strong>Congue nihil
-                                    imperdiet doming id quod mazim placerat facer possim assum minim veniam, quis nostrud
-                                    nostrud exerci tation.
-                                </li>
-                                <li>
-                                    <strong>Non curabitur gravida arcu ac tortor dignissim convallis eu consequat ac felis
-                                        donec.</strong>
-                                </li>
-                                <li>
-                                    <strong>Fames ac turpis egestas maecenas. </strong>Dignissim cras tincidunt lobortis
-                                    feugiat vivamus at. Massa eget egestas purus viverra accumsan iaculis at erat
-                                    pellentesque adipiscing.
-                                </li>
-                            </ul>
-    
-                            <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
-                                Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
-                                porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
-                                dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus sit.
-                                In aliquam sem fringilla ut morbi tincidunt.
-                            </p>
-                            <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Pharetra diam sit amet
-                                nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla facilisi cras fermentum odio
-                                eu.
-                            </p>
-                            <div class="post-details-shared">
-                                <hr class="divider divider--style10">
-    
-                                <ul class="widget w--category-links category--with-title">
-                                    <li>
-                                        Tags
-                                    </li>
-                                    <li>
-                                        <svg class="woox-icon icon-hash-key">
-                                            <use xlink:href="svg-icons/sprites/icons.svg#icon-hash-key"></use>
-                                        </svg>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link--with-decoration">user interface</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link--with-decoration">app</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link--with-decoration">sketch</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link--with-decoration">photoshop</a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="link--with-decoration">wordpress</a>
-                                    </li>
-                                </ul>
-    
-                                <ul class="socials socials--small socials--colored socials--with-title">
-                                    <li>Share</li>
-    
-                                    <li class="c-facebook">
-                                        <a href="#">
-                                            <svg class="woox-icon icon-facebook-circular-logo">
-                                                <use xlink:href="svg-icons/sprites/icons.svg#icon-facebook-circular-logo">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-    
-                                    <li class="c-twitter">
-                                        <a href="#">
-                                            <svg class="woox-icon icon-twitter-circular-logo">
-                                                <use xlink:href="svg-icons/sprites/icons.svg#icon-twitter-circular-logo">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-    
-                                    <li class="c-pinterest">
-                                        <a href="#">
-                                            <svg class="woox-icon icon-pinterest-circular-logo-symbol">
-                                                <use
-                                                    xlink:href="svg-icons/sprites/icons.svg#icon-pinterest-circular-logo-symbol">
-                                                </use>
-                                            </svg>
-                                        </a>
-                                    </li>
-    
-                                </ul>
-    
-                            </div>
-                        </div> -->
-                        {{ content }}
-                    </article>
-    
-                    <!-- <div class="blog-details-author">
-                        <div class="author-block">
-                            <img class="avatar" src="img/author8.jpg" alt="avatar">
-                        </div>
-    
-                        <div class="author-details">
-    
-                            <div class="author-content-wrap">
-                                <div class="author-content">
-                                    <div class="author-prof">posted by</div>
-                                    <a href="#" class="h6 author-name">Philip Demarco</a>
-                                </div>
-                                <a href="#"
-                                    class="btn btn--small btn--transparent btn--grey-light btn--with-icon btn---icon-left">
-                                    <i class="woox-icon fas fa-envelope"></i>
-                                    send a message
-                                </a>
-                            </div>
-    
-                            <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est
-                                etiam processus dynamicus, qui sequitur mutationem consuetudium. Nam liber tempor cum soluta
-                                nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim
-                                assum minim veniam, quis nostrud nostrud.
-                            </p>
-    
-                            <ul class="socials socials--double-icons">
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-twitter woox-icon"></i>
-                                        <i class="fab fa-twitter woox-icon hover"></i>
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-dribbble woox-icon"></i>
-                                        <i class="fab fa-dribbble woox-icon hover"></i>
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-instagram woox-icon"></i>
-                                        <i class="fab fa-instagram woox-icon hover"></i>
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-linkedin-in woox-icon"></i>
-                                        <i class="fab fa-linkedin-in woox-icon hover"></i>
-                                    </a>
-                                </li>
-    
-                                <li>
-                                    <a href="#">
-                                        <i class="fab fa-facebook-square woox-icon"></i>
-                                        <i class="fab fa-facebook-square woox-icon hover"></i>
-                                    </a>
-                                </li>
-                            </ul>
-    
-                        </div>
-    
-                    </div>
-    
-                    <div class="navigation navigation--posts">
-                        <a href="#" class="navigation-post-item">
-                            <img src="img/post-prev.jpg" alt="screenshot">
-                            <div class="overlay-standard"></div>
-                            <div class="content-wrap">
-                                <div class="content">
-                                    <div class="category">prev post</div>
-                                    <h5 class="post-title">Sed sed risus pretium quam vulputate dignissim</h5>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="navigation-post-item">
-                            <img src="img/post-next.jpg" alt="screenshot">
-                            <div class="overlay-standard"></div>
-                            <div class="content-wrap">
-                                <div class="content">
-                                    <div class="category">next post</div>
-                                    <h5 class="post-title">Sed sed risus pretium quam vulputate dignissim</h5>
-                                </div>
-                            </div>
-                        </a>
-                    </div> -->
-    
-                    <!-- <div class="comments-wrap">
-                        <header class="crumina-module crumina-heading heading--h3 heading--with-decoration">
-                            <h4 class="heading-title">Share Your Thoughts</h4>
-                        </header>
-    
-                        <form class="contact-form leave-reply" method="post">
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                    <div class="form-group label-floating is-empty">
-                                        <label class="input-label control-label">Write your message here</label>
-                                        <textarea class="form-control input--squared height-120" name="message"
-                                            placeholder=""></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="form-group label-floating">
-                                        <label class="input-label control-label">What is your name? <abbr class="required"
-                                                title="required">*</abbr></label>
-                                        <input class="form-control input--squared" type="text" value="Peter Spenser">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="form-group label-floating">
-                                        <label class="input-label control-label">Email address
-                                            <abbr class="required" title="required">*</abbr></label>
-                                        <input class="form-control input--squared" type="email"
-                                            value="themefire.pro@gmail.com">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <div class="form-group label-floating">
-                                        <label class="input-label control-label">Website http://</label>
-                                        <input class="form-control input--squared" type="text" value="">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <button
-                                        class="btn btn--medium btn--secondary btn--transparent btn--hover-decoration full-width">post
-                                        a comment</button>
-                                </div>
-                            </div>
-                        </form>
-    
-                        <hr class="divider divider--style10">
-    
-                        <div class="comments" id="comments">
-    
-                            <h4 class="title"><b>6</b> Comments on “<span>Sed sed risus pretium quam vulputate dignissim
-                                    tristique senect</span>”</h4>
-    
-                            <ol class="comments__list sorting-container" data-layout="masonry"
-                                data-isotope='{"masonry": { "columnWidth": ".grid-sizer-full-width" }}'>
-                                <li class="grid-sizer-full-width"></li>
-                                <li class="comments__item">
-    
-                                    <div class="comment-entry comment comments__article">
-    
-                                        <div class="comments__avatar">
-                                            <img src="img/author2.jpg" alt="avatar">
-                                            <a href="#" class="link--with-decoration reply">Reply</a>
-                                        </div>
-    
-    
-                                        <div class="comments__body">
-    
-                                            <div class="d-flex--content-inline">
-    
-                                                <header class="comment-meta comments__header">
-    
-                                                    <cite class="fn url comments__author">
-                                                        <a href="#" rel="external">Philip Demarco</a>
-                                                    </cite>
-    
-                                                    <div class="comments__time">
-                                                        <time class="published" datetime="2018-03-14 12:36:00">March 14,
-                                                            2018 at 12:36 pm</time>
-                                                    </div>
-    
-                                                </header>
-                                            </div>
-    
-                                            <div class="comment-content comment">
-                                                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt
-                                                    saepius.
-                                                    Claritas est etiam processus dynamicus, qui sequitur mutationem
-                                                    consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc
-                                                    putamus parum claram, anteposuerit litterarum formas humanitatis per
-                                                    seacula qui mutationem consuetudium.
-                                                </p>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <ol class="children">
-                                        <li class="comments__item">
-    
-                                            <div class="comment-entry comment comments__article">
-    
-                                                <div class="comments__avatar">
-                                                    <img src="img/author3.jpg" alt="avatar">
-                                                    <a href="#" class="link--with-decoration reply">Reply</a>
-                                                </div>
-    
-    
-                                                <div class="comments__body">
-    
-                                                    <div class="d-flex--content-inline">
-    
-                                                        <header class="comment-meta comments__header">
-    
-                                                            <cite class="fn url comments__author">
-                                                                <a href="#" rel="external">Angelina Johnson</a>
-                                                            </cite>
-    
-                                                            <div class="comments__time">
-                                                                <time class="published" datetime="2018-03-14 12:36:00">March
-                                                                    14, 2018 at 12:36 pm</time>
-                                                            </div>
-    
-                                                        </header>
-                                                    </div>
-    
-                                                    <div class="comment-content comment">
-                                                        <p>Mirum est notare quam littera gothica, quam nunc putamus parum.
-                                                        </p>
-                                                    </div>
-    
-                                                </div>
-    
-                                            </div>
-                                        </li>
-                                        <li class="comments__item">
-    
-                                            <div class="comment-entry comment comments__article">
-    
-                                                <div class="comments__avatar">
-                                                    <img src="img/author5.jpg" alt="avatar">
-                                                    <a href="#" class="link--with-decoration reply">Reply</a>
-                                                </div>
-    
-    
-                                                <div class="comments__body">
-    
-                                                    <div class="d-flex--content-inline">
-    
-                                                        <header class="comment-meta comments__header">
-    
-                                                            <cite class="fn url comments__author">
-                                                                <a href="#" rel="external">Peter Spenser</a>
-                                                            </cite>
-    
-                                                            <div class="comments__time">
-                                                                <time class="published" datetime="2018-03-14 12:36:00">March
-                                                                    14, 2018 at 12:36 pm</time>
-                                                            </div>
-    
-                                                        </header>
-                                                    </div>
-    
-                                                    <div class="comment-content comment">
-                                                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem
-                                                            consuetudium lectorum. Mirum est notare quam littera gothica,
-                                                            quam
-                                                            nunc putamus parum claram, anteposuerit litterarum formas
-                                                            humanitatis.
-                                                        </p>
-                                                    </div>
-    
-                                                </div>
-    
-                                            </div>
-    
-                                            <ol class="children">
-                                                <li class="comments__item">
-    
-                                                    <div class="comment-entry comment comments__article">
-    
-                                                        <div class="comments__avatar">
-                                                            <img src="img/author2.jpg" alt="avatar">
-                                                            <a href="#" class="link--with-decoration reply">Reply</a>
-                                                        </div>
-    
-    
-                                                        <div class="comments__body">
-    
-                                                            <div class="d-flex--content-inline">
-    
-                                                                <header class="comment-meta comments__header">
-    
-                                                                    <cite class="fn url comments__author">
-                                                                        <a href="#" rel="external">Philip Demarco</a>
-                                                                    </cite>
-    
-                                                                    <div class="comments__time">
-                                                                        <time class="published"
-                                                                            datetime="2018-03-14 12:36:00">March 14, 2018 at
-                                                                            12:36 pm</time>
-                                                                    </div>
-    
-                                                                </header>
-                                                            </div>
-    
-                                                            <div class="comment-content comment">
-                                                                <p>Investigationes demonstraverunt lectores legere me lius
-                                                                    quod
-                                                                    ii legunt saepius. Claritas est etiam processus
-                                                                    dynamicus,
-                                                                    qui sequitur mutationem consuetudium lectorum. Mirum est
-                                                                    notare
-                                                                    quam littera gothica, quam nunc putamus parum claram,
-                                                                    anteposuerit
-                                                                    litterarum formas humanitatis per seacula.
-                                                                </p>
-                                                            </div>
-    
-                                                        </div>
-    
-                                                    </div>
-                                                </li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li class="comments__item">
-    
-                                    <div class="comment-entry comment comments__article">
-    
-                                        <div class="comments__avatar">
-                                            <img src="img/author6.jpg" alt="avatar">
-                                            <a href="#" class="link--with-decoration reply">Reply</a>
-                                        </div>
-    
-    
-                                        <div class="comments__body">
-    
-                                            <div class="d-flex--content-inline">
-    
-                                                <header class="comment-meta comments__header">
-    
-                                                    <cite class="fn url comments__author">
-                                                        <a href="#" rel="external">Frank Godman</a>
-                                                    </cite>
-    
-                                                    <div class="comments__time">
-                                                        <time class="published" datetime="2018-03-14 12:36:00">March 14,
-                                                            2018 at 12:36 pm</time>
-                                                    </div>
-    
-                                                </header>
-                                            </div>
-    
-                                            <div class="comment-content comment">
-                                                <p>Investigationes demonstraverunt lectores legere me lius quod ii legunt
-                                                    saepius.
-                                                    Claritas est etiam processus dynamicus, qui sequitur mutationem
-                                                    consuetudium lectorum.
-                                                    Mirum est notare quam littera gothica, quam nunc putamus parum claram,
-                                                    anteposuerit litterarum
-                                                    formas humanitatis per seacula qui mutationem consuetudium.
-                                                </p>
-                                            </div>
-    
-                                        </div>
-    
-                                    </div>
-    
-                                    <ol class="children">
-                                        <li class="comments__item">
-    
-                                            <div class="comment-entry comment comments__article">
-    
-                                                <div class="comments__avatar">
-                                                    <img src="img/author7.jpg" alt="avatar">
-                                                    <a href="#" class="link--with-decoration reply">Reply</a>
-                                                </div>
-    
-    
-                                                <div class="comments__body">
-    
-                                                    <div class="d-flex--content-inline">
-    
-                                                        <header class="comment-meta comments__header">
-    
-                                                            <cite class="fn url comments__author">
-                                                                <a href="#" rel="external">Britney Simpson</a>
-                                                            </cite>
-    
-                                                            <div class="comments__time">
-                                                                <time class="published" datetime="2018-03-14 12:36:00">March
-                                                                    14, 2018 at 12:36 pm</time>
-                                                            </div>
-    
-                                                        </header>
-                                                    </div>
-    
-                                                    <div class="comment-content comment">
-                                                        <p>Claritas est etiam processus dynamicus, qui sequitur mutationem
-                                                            consuetudium lectorum.
-                                                            Mirum est notare quam littera gothica, quam nunc putamus parum
-                                                            claram, anteposuerit litterarum formas humanitatis.
-                                                        </p>
-                                                    </div>
-    
-                                                </div>
-    
-                                            </div>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
-    
-                        </div>
-    
-                        <div class="row align-center mb30 mt30">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <a href="#" class="btn btn--medium btn--secondary btn--transparent" id="load-more-button"
-                                    data-load-link="comments-to-load.html" data-container="comments">load more comments</a>
-                            </div>
-                        </div>
-                    </div> -->
-                </div>
-                <!-- Blog post Details end ... -->
-    
-                {% include sidebar.html%}
-    
-            </div>
-        </div>
-    </section>
+        <div class="row mx-2">
 
+            <!-- Blog post Details -->
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <section class="pt120" style="display:flex;">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <header class="crumina-module crumina-heading heading--h2 no-margin">
+                                    <ul class="breadcrumbs mt-3">
+                                        <li class="breadcrumbs-item">
+                                            <a href="#">{{ page.categories | join: "|" }}</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="heading-title heading--half-colored my-0">{{ page.blog-title }}</h2>
+                                    <div class="heading-text">{{ page.phrase }}</div>
+                                    <div class="post-additional-info">
+                
+                                        <div class="post-comments-date-wrap">
+                                            <div class="post__author-name fn">
+                                                by
+                                                <a href="#" class="post__author-link">{{ page.author }} </a>
+                                            </div>
+            
+                                            <div class="post__date">
+                                                <time class="published" datetime="2018-03-26 12:00:00">
+                                                    {{ page.date | date: "%b %-d, %Y" }}
+                                                </time>
+                                            </div>
+            
+                                            <!-- <div class="post__comments">
+                                                <a href="#">16 Comments</a>
+                                            </div> -->
+                                        </div>
+            
+                                    </div>
+                                </header>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <article class="hentry post post-standard has-post-thumbnail post-standard-details">
+                    <!-- <div class="post-thumb">
+                        <img src="{{ page.thumbnail }}" alt="post">
+                    </div>
+
+                    <div class="post__content">
+
+                        <p class="weight-bold c-secondary">Odio morbi quis commodo odio aenean sed. Proin sagittis nisl
+                            rhoncus mattis rhoncus urna neque viverra. Magna sit amet purus gravida quis blandit.
+                            Ornare quam viverra orci sagittis eu. Purus viverra accumsan in nisl nisi scelerisque
+                            eu ultrices. Non odio euismod lacinia at quis risus sed vulputate.
+                        </p>
+                        <p>Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit
+                            litterarum
+                            formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc
+                            nobis videntur parum clari, fiant sollemnes in futurum. Nam liber tempor cum soluta nobis
+                            eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum
+                            minim
+                            veniam, quis nostrud nostrud exerci tation. Lorem ipsum dolor sit amet, consectetuer
+                            adipiscing elit.
+                        </p>
+
+                        <blockquote>
+                            <p>Qel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum
+                                dolore eu
+                                feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+                                praesent
+                                luptatum zzril delenit augue.
+                            </p>
+                            <h6>
+                                Philip Demarco
+                                <span>founder of agency</span>
+                            </h6>
+                        </blockquote>
+
+                        <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
+                            Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
+                            porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
+                            dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus
+                            sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a erat nam at.
+                            Sagittis aliquam malesuada bibendum arcu vitae elementum cura
+                        </p>
+
+                        <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+                            Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla
+                            facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh
+                            praesent tristique. Leo integer malesuada nunc.
+                        </p>
+
+                        <div class="wp-caption alignleft">
+                            <img src="assets/img/blog20.jpg" alt="blog">
+                        </div>
+
+                        <h5>Investigationes demonstraverunt lectores legere me lius</h5>
+
+                        <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+                            Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla
+                            facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh
+                            praesent tristique. Leo integer malesuada nunc.
+                        </p>
+
+                        <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
+                            Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
+                            porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
+                            dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus
+                            sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a erat nam at.
+                            Sagittis aliquam malesuada bibendum arcu vitae elementum cura
+                        </p>
+
+                        <div class="wp-caption alignnone">
+                            <img src="assets/img/blog21.jpg" alt="blog">
+                            <div class="wp-caption-text">In mollis nunc sed id semper risus in.<span> © photo by</span>
+                                <a href="#" class="link--with-decoration">Philip Demarco</a></div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p>Nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut.
+                                    Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla.
+                                    Cursus turpis massa tincidunt dui ut ornare lectus sit. In aliquam sem fringilla
+                                    ut morbi tincidunt. Non consectetur a erat nam at. Sagittis aliquam malesuada
+                                    bibendum arcu vitae elementum curabitur.
+                                </p>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque.
+                                    Pharetra diam sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in.
+                                    Nulla facilisi cras fermentum odio eu. Fames ac turpis egestas integer eget
+                                    aliquet nibh praesent tristique. Leo integer malesuada nunc.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="wp-caption alignright">
+                            <img src="assets/img/blog22.jpg" alt="blog">
+                        </div>
+
+                        <h5>INVESTIGATIONES DEMONSTRAVERUNT LECTORES</h5>
+                        <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Pharetra diam
+                            sit amet nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla facilisi cras
+                            fermentum odio eu. Fames ac turpis egestas integer eget aliquet nibh praesent tristique.
+                            Leo integer malesuada nunc.
+                        </p>
+
+                        <p>Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
+                            porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices
+                            gravida dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut
+                            ornare lectus sit. In aliquam sem fringilla ut morbi tincidunt. Non consectetur a
+                            erat nam at. Sagittis aliquam malesuada bibendum.
+                        </p>
+
+                        <h5>Qectores legere me lius quod laritas est etiam processus</h5>
+
+                        <p>Scelerisque fermentum dui faucibus in ornare. Arcu cursus euismod quis viverra nibh cras
+                            pulvinar mattis. Ornare massa eget egestas purus viverra accumsan in. Metus dictum at tempor
+                            commodo ullamcorper a lacus vestibulum. A pellentesque sit amet porttitor eget dolor morbi.
+                            Diam quam nulla porttitor massa id neque aliquam vestibulum. Consequat mauris nunc congue
+                            nisi vitae suscipit.
+                        </p>
+
+                        <p>Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim
+                            placerat facer possim assum minim veniam, quis nostrud nostrud exerci tation.</p>
+
+                        <ul>
+                            <li>
+                                <strong>Nam liber tempor cum soluta nobis eleifend option. </strong>Congue nihil
+                                imperdiet doming id quod mazim placerat facer possim assum minim veniam, quis nostrud
+                                nostrud exerci tation.
+                            </li>
+                            <li>
+                                <strong>Non curabitur gravida arcu ac tortor dignissim convallis eu consequat ac felis
+                                    donec.</strong>
+                            </li>
+                            <li>
+                                <strong>Fames ac turpis egestas maecenas. </strong>Dignissim cras tincidunt lobortis
+                                feugiat vivamus at. Massa eget egestas purus viverra accumsan iaculis at erat
+                                pellentesque adipiscing.
+                            </li>
+                        </ul>
+
+                        <p>In mollis nunc sed id semper risus in. Consequat mauris nunc congue nisi vitae suscipit.
+                            Donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum. Nulla aliquet
+                            porttitor lacus luctus accumsan tortor posuere ac ut. Ipsum suspendisse ultrices gravida
+                            dictum fusce ut placerat orci nulla. Cursus turpis massa tincidunt dui ut ornare lectus sit.
+                            In aliquam sem fringilla ut morbi tincidunt.
+                        </p>
+                        <p>Congue mauris rhoncus aenean vel elit scelerisque mauris pellentesque. Pharetra diam sit amet
+                            nisl suscipit. Ac odio tempor orci dapibus ultrices in. Nulla facilisi cras fermentum odio
+                            eu.
+                        </p>
+                        <div class="post-details-shared">
+                            <hr class="divider divider--style10">
+
+                            <ul class="widget w--category-links category--with-title">
+                                <li>
+                                    Tags
+                                </li>
+                                <li>
+                                    <svg class="woox-icon icon-hash-key">
+                                        <use xlink:href="svg-icons/sprites/icons.svg#icon-hash-key"></use>
+                                    </svg>
+                                </li>
+                                <li>
+                                    <a href="#" class="link--with-decoration">user interface</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link--with-decoration">app</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link--with-decoration">sketch</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link--with-decoration">photoshop</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="link--with-decoration">wordpress</a>
+                                </li>
+                            </ul>
+
+                            <ul class="socials socials--small socials--colored socials--with-title">
+                                <li>Share</li>
+
+                                <li class="c-facebook">
+                                    <a href="#">
+                                        <svg class="woox-icon icon-facebook-circular-logo">
+                                            <use xlink:href="svg-icons/sprites/icons.svg#icon-facebook-circular-logo">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="c-twitter">
+                                    <a href="#">
+                                        <svg class="woox-icon icon-twitter-circular-logo">
+                                            <use xlink:href="svg-icons/sprites/icons.svg#icon-twitter-circular-logo">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                                <li class="c-pinterest">
+                                    <a href="#">
+                                        <svg class="woox-icon icon-pinterest-circular-logo-symbol">
+                                            <use
+                                                xlink:href="svg-icons/sprites/icons.svg#icon-pinterest-circular-logo-symbol">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                    </div> -->
+                    {{ content }}
+                </article>
+
+                
+                <div class="comments-wrap">
+                    <header class="crumina-module crumina-heading heading--h3 heading--with-decoration">
+                        <h4 class="heading-title">Share Your Thoughts</h4>
+                    </header>
+
+                    <form class="contact-form leave-reply" method="post">
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="form-group label-floating is-empty">
+                                    <label class="input-label control-label">Write your message here</label>
+                                    <textarea class="form-control input--squared height-120" name="message"
+                                        placeholder=""></textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group label-floating">
+                                    <label class="input-label control-label">What is your name? <abbr class="required"
+                                            title="required">*</abbr></label>
+                                    <input class="form-control input--squared" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div class="form-group label-floating">
+                                    <label class="input-label control-label">Email address
+                                        <abbr class="required" title="required">*</abbr></label>
+                                    <input class="form-control input--squared" type="email">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mx-auto">
+                                <button
+                                    class="btn btn--medium btn--secondary btn--transparent btn--hover-decoration full-width">post
+                                    a comment</button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <hr class="divider divider--style10">
+
+                    <div class="comments" id="comments">
+
+                        <h4 class="title"><b>1</b> Comment on “<span>{{ page.blog-title }}</span>”</h4>
+
+                        <ol class="comments__list sorting-container" data-layout="masonry"
+                            data-isotope='{"masonry": { "columnWidth": ".grid-sizer-full-width" }}'>
+                            <li class="grid-sizer-full-width"></li>
+                            <li class="comments__item">
+
+                                <div class="comment-entry comment comments__article">
+
+                                    <div class="comments__avatar">
+                                        <img src="/assets/img/author2.jpg" alt="avatar">
+                                        <!-- <a href="#" class="link--with-decoration reply">Reply</a> -->
+                                    </div>
+
+
+                                    <div class="comments__body">
+
+                                        <div class="d-flex--content-inline">
+
+                                            <header class="comment-meta comments__header">
+
+                                                <cite class="fn url comments__author">
+                                                    <a href="#" rel="external">Vaishnavi</a>
+                                                </cite>
+
+                                                <div class="comments__time">
+                                                    <time class="published" datetime="2024-02-06 21:36:00">February 6,
+                                                        2024 at 9:36 pm</time>
+                                                </div>
+
+                                            </header>
+                                        </div>
+
+                                        <div class="comment-content comment">
+                                            <p>This article was a great read! It provided such clear explanations about organic, paid, and influencer marketing. The tips for matching strategy to objective were particularly helpful. I feel much more confident in understanding these concepts now. Thank you for sharing such valuable insights in such an easy-to-understand format. Looking forward to reading more from you!
+                                            </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+                        </ol>
+
+                    </div>
+
+                    <div class="row align-center mb30 mt30">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <a href="#" class="btn btn--medium btn--secondary btn--transparent" id="load-more-button"
+                                data-load-link="comments-to-load.html" data-container="comments">load more comments</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog post Details end ... -->
+            
+            {% include sidebar.html%}
+
+        </div>
+<!-- 
+        <div class="navigation navigation--posts">
+            <a href="#" class="navigation-post-item mx-auto">
+                <img src="/assets/img/blog/digital-marketing-2.jpg" alt="screenshot">
+                <div class="overlay-standard"></div>
+                <div class="content-wrap">
+                    <div class="content">
+                        <div class="category">Also read</div>
+                        <h5 class="post-title">{{ page.blog-title }}</h5>
+                    </div>
+                </div>
+            </a>
+        </div> -->
+
+    </section>
+    
 </div>
 {% include cta.html %}
 {% include footer.html %}
