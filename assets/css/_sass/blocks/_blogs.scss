@@ -769,12 +769,27 @@ a img.aligncenter {
 }
 
 @media (max-width: 480px) {
+  .blog-title{
+    margin-top: 100px;
+  }
+
   .post-additional-info {
 	flex-direction: column;
 
 	.post-comments-date-wrap {
 	  margin-top: 10px;
 	}
+  }
+}
+
+@media (max-width: 425px) {
+  .post.post--wide{
+    padding: 0;
+    font-size: smaller;
+    
+    .post__content{
+      padding: 0;
+    }
   }
 }
 
