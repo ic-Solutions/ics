@@ -313,7 +313,7 @@ layout: compress
 
                     <div class="comments" id="comments">
 
-                        <h4 class="title"><b>1</b> Comment on “<span>{{ page.blog-title }}</span>”</h4>
+                        <h4 class="title"><b>Comments on “<span>{{ page.blog-title }}</span>”</h4>
 
                         <ol class="comments__list sorting-container" data-layout="masonry"
                             data-isotope='{"masonry": { "columnWidth": ".grid-sizer-full-width" }}'>
@@ -322,8 +322,11 @@ layout: compress
 
                                 <div class="comment-entry comment comments__article">
 
+                                    {% for comment in site.data.comments %}
+                                    {% if comment.blog == page.blog-title %}
+
                                     <div class="comments__avatar">
-                                        <img src="/assets/img/author2.jpg" alt="avatar">
+                                        <img src="{{ comment.avatar }}" alt="avatar">
                                         <!-- <a href="#" class="link--with-decoration reply">Reply</a> -->
                                     </div>
 
@@ -335,24 +338,24 @@ layout: compress
                                             <header class="comment-meta comments__header">
 
                                                 <cite class="fn url comments__author">
-                                                    <a href="#" rel="external">Julie</a>
+                                                    <a href="#" rel="external">{{ comment.author }}</a>
                                                 </cite>
 
                                                 <div class="comments__time">
-                                                    <time class="published" datetime="2024-02-06 21:36:00">February 6,
-                                                        2024 at 9:36 pm</time>
+                                                    <time class="published" datetime="2024-02-06 21:36:00">{{ comment.time }}</time>
                                                 </div>
 
                                             </header>
                                         </div>
 
                                         <div class="comment-content comment">
-                                            <p>This article was a great read! It provided such clear explanations about organic, paid, and influencer marketing. The tips for matching strategy to objective were particularly helpful. I feel much more confident in understanding these concepts now. Thank you for sharing such valuable insights in such an easy-to-understand format. Looking forward to reading more from you!
+                                            <p>{{ comment.content }}
                                             </p>
                                         </div>
 
                                     </div>
-
+                                    {% endif %}
+                                    {% endfor %}
                                 </div>
 
                             </li>
@@ -360,12 +363,12 @@ layout: compress
 
                     </div>
 
-                    <div class="row align-center mb30 mt30">
+                    <!-- <div class="row align-center mb30 mt30">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <a href="#" class="btn btn--medium btn--secondary btn--transparent" id="load-more-button"
                                 data-load-link="comments-to-load.html" data-container="comments">load more comments</a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
             <!-- Blog post Details end ... -->
