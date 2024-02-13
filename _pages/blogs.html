@@ -20,27 +20,26 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 		</div>
 	</section>
 
-	<section class="post--wide-wrap pt120">
+	<section class="post--wide-wrap">
 		<div class="px-5">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					<h3 class="heading-title px-5">Latest Posts</h3>
+					<h3 class="heading-title px-5" id="latest">Latest Posts</h3>
 					{% for post in site.posts%}
 					
-					<article class="hentry post post-standard has-post-thumbnail sticky post--wide .digimarket">
-
-						<div class="post-thumb">
-							<img src="{{post.thumbnail}}" alt="post">
-							<div class="overlay overlay-blog"></div>
-						</div>
-
+					<article class="hentry post post-standard has-post-thumbnail {{ post.categories | join: ' ' }}  {{ post.author }}">
+						<a href="{{ post.url }}">
+							<div class="post-thumb">
+								<img src="{{post.thumbnail}}" alt="post">
+							</div>
+						</a>
 						<div class="post__content">
 
 							<div class="post__content-info">
 
-								<a href="#" class="category">{{post.categories | join: " "}}</a>
+								<a href="#latest?cat={{ post.categories | join: ' ' }}" class="category">{{post.categories | join: " "}}</a>
 
-								<a href="{{ post.url }}" class="h3 post__title entry-title">{{post.blog-title}}</a>
+								<a href="{{ post.url }}" class="h4 post__title entry-title">{{post.blog-title}}</a>
 
 								<div class="post-additional-info">
 
@@ -55,11 +54,11 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 										</div> -->
 									</div>
 
-									<div class="author-block author vcard">
+									<div class="author-block author vcard" style="padding: 0px;">
 										<img class="avatar" src="../assets/img/user.png" alt="avatar">
 										<div class="author-content">
 											<div class="author-prof">posted by</div>
-											<a href="#" class="author-name fn">ICS</a>
+											<a href="#latest?author={{ post.author }}" class="author-name fn">ICS</a>
 										</div>
 									</div>
 								</div>
@@ -77,23 +76,20 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 						<h5 class="pb-2">Popular tags</h5>
 						<ul class="tags-list">
 							<li>
-								<a href="#">Website Development</a>
+								<a href="#latest">Website Development</a>
 							</li>
 							<li>
-								<a href="#">SEO</a>
+								<a href="#latest">SEO</a>
 							</li>
 							<li>
-								<a href="#">UI/UX</a>
+								<a href="#latest">UI/UX</a>
 							</li>
 							<li>
-								<a href="#">Digital Marketing</a>
+								<a href="#latest">Digital Marketing</a>
 							</li>
 						</ul>
 					</aside>  
 					<aside class="widget w-shared-posts" >
-						<svg class="woox-icon icon-wave wave-line">
-							<use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use>
-						</svg>
 						<h5 class="">Featured Posts</h5>
 						<ul class="list-shared-post">
 							{% for post in site.posts %}
