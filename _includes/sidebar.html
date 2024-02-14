@@ -1,5 +1,5 @@
 <!-- Sidebar -->
-<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: sticky; top:120px;">
+<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position: relative; top:120px;">
     <aside aria-label="sidebar" class="sidebar sidebar-left">
 <!-- 
         <aside class="widget w-popular-products crumina-module crumina-module-slider pagination-bottom-center">
@@ -78,11 +78,11 @@
         </aside>  
 
         <aside class="widget w-subscribe">
-            <form method="post" action="send_mail.php">
+            <form method="post" action="/record_mail.php">
                 <h4 class="title">Subscribe</h4>
                 <p>Subscribe now to get notified about our new blogs!</p>
 
-                <input type="email" value="" placeholder="Your E-mail Address">
+                <input name="email" id="email" type="email" value="" placeholder="Your E-mail Address">
 
                 <button class="btn btn--medium btn--secondary full-width">subscribe now!</button>
 

@@ -55,7 +55,7 @@ layout: compress
                         </div>
                     </div>
                 </section>
-                <article class="hentry post post-standard has-post-thumbnail post-standard-details">
+                <article class="hentry post-body post-standard has-post-thumbnail post-standard-details">
                     <!-- <div class="post-thumb">
                         <img src="{{ page.thumbnail }}" alt="post">
                     </div>
@@ -342,7 +342,7 @@ layout: compress
                                                 </cite>
 
                                                 <div class="comments__time">
-                                                    <time class="published" datetime="2024-02-06 21:36:00">{{ comment.time }}</time>
+                                                    <time class="published" datetime="{{ comment.date | date: '%Y-%m-%d %H:%M:%S' }}">{{ comment.date | date: "%B %-d, %Y at %l:%M %P"  }}</time>
                                                 </div>
 
                                             </header>
