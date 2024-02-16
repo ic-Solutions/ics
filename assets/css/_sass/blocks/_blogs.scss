@@ -1,5 +1,9 @@
 /*------------- #BLOGS --------------*/
 
+.mx5{
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
 
 .post {
   border-radius: 50px;
@@ -90,9 +94,15 @@
   margin-bottom: 40px;
   position: relative;
   max-width: 100%;
-  text-align: justify;
-  p {
-    font-size: larger;
+  color: rgba(0, 0, 0, 0.7);
+
+  h3, h4, p, li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  p, li {
+    font-size: x-large;
+    text-align: justify;
   }
 }
 
@@ -832,6 +842,23 @@ a img.aligncenter {
 }
 
 @media (max-width: 425px) {
+  .mx5{
+    margin-left: 0.2rem !important;
+    margin-right: 0.2rem !important;
+  }
+
+  .post-body{    
+    padding: 0;
+
+    p {
+      font-size:medium;
+    }
+
+    li {
+      font-size: medium;
+    }
+  }
+
   .post > a > .post-thumb{
     height: 30vh;
   }
