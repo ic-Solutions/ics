@@ -1,8 +1,8 @@
 /*------------- #BLOGS --------------*/
 
 .mx5{
-  margin-left: 3rem !important;
-  margin-right: 3rem !important;
+  margin-left: 4rem !important;
+  margin-right: 1rem !important;
 }
 
 .post {
@@ -103,6 +103,17 @@
   p, li {
     font-size: x-large;
     text-align: justify;
+  }
+
+  .appear{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  .appear.active{
+      transform: translateX(0);
+      opacity: 1;
   }
 }
 
