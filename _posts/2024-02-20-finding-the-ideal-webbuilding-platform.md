@@ -15,7 +15,7 @@ author: ICS
         for (var i = 0; i < reveals.length; i++) {
             var windowHeight = window.innerHeight;
             var elementTop = reveals[i].getBoundingClientRect().top;
-            var elementVisible = 150;
+            var elementVisible = 250;
             if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
             } else {
@@ -72,7 +72,10 @@ Building a website requires selecting the right platform, the foundation upon wh
     
     **Weaknesses:** Limited scope beyond e-commerce functionalities. While excelling in online sales, these platforms might not be suitable for websites with broader purposes beyond selling products. They may also have higher costs compared to other options.
 
+<img class="appear" src="/assets/img/blog/blog_assets/sitebuilder-stats-line.png" alt="site-builder statistics">
+<p style="text-align: center; font-size: small; font-style: italics;"> Heatmap depicting a similar trend while comapring the tools.</p>
 <img class="appear" src="/assets/img/blog/blog_assets/sitebuilder-stats.jpg" alt="site-builder statistics">
+
 
 ### Making the Choice: Building Your Website
 Choosing the right website platform is akin to building a house. You wouldn't choose a foundation without considering the size, style, and functionality of your dream home, right? Website building follows the same principle. Before diving into flashy templates and intricate features, consider your specific needs and priorities.
