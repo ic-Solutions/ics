@@ -2,7 +2,6 @@
 title: Blog \| Stay updated on the latest web trends and techniques
 description: Explore to expand your horizons. Read up on new and innovative tech and techniques to boost your website development and digital marketing game.
 layout: default
-permalink: /blogs/
 image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 ---
 
@@ -24,8 +23,9 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 		<div class="px-5">
 			<div class="row">
 				<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-					<h3 class="heading-title px-5" id="latest">Latest Posts</h3>
-					{% for post in site.posts%}
+					<h3 class="heading-title px-5" id="latest">Latest in {{page.cat}}</h3>
+					{% for post in site.posts %}
+					{% if post.categories contains page.cat %}
 					
 					<article class="hentry post post-standard has-post-thumbnail {{ post.categories | join: ' ' }}  {{ post.author }}">
 						<a href="{{ post.url }}">
@@ -68,7 +68,7 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 
 					</article>
 					<hr class="divider divider--style10">
-					
+					{% endif %}
 					{% endfor %}
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position:sticky; top:120px">
@@ -99,7 +99,6 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 										<img src="{{ post.thumbnail }}" alt="post" style="height:100%; object-fit:cover;">
 									</div>
 									<div class="post__content">
-										<a href="#" class="category">{{ post.category | join: " " }}</a>
 										<a href="{{ post.url }}" class="h6 post__title entry-title">{{ post.blog-title }}</a>
 										<div class="share-counter pl-1">by {{ post.author }}</div>
 									</div>
