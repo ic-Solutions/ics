@@ -103,8 +103,6 @@ Remember, the ideal platform is not a one-size-fits-all solution. By prioritizin
 
 Understanding your priorities - speed, simplicity, or freedom - is key to finding the perfect fit. Whether you're a tech whiz or a complete beginner, there's a platform out there waiting to bring your vision to life.
 
-*Was all that too much? Reach out to us to request a personalized quote today! We at IC Solutions are always ready to help you navigate your options and build a website that exceeds your expectations. Contact us today and get started on your online success story!*
-<p style="text-align:center; font-weight: bold">OR</p>
 *Need expert guidance? ICSolutions, a leading website development agency, can help you navigate the options and build a website that exceeds expectations. Contact us today and get started on your online success story!*
 
 *P.S. Check out our portfolio for some serious website inspiration!*
