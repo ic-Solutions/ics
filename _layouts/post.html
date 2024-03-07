@@ -25,7 +25,7 @@ layout: compress
                                 <header class="crumina-module crumina-heading heading--h2 no-margin">
                                     <ul class="breadcrumbs mt-3">
                                         <li class="breadcrumbs-item">
-                                            <a href="/{{ page.categories | join: ' '}}">{{ page.categories | join: "|" }}</a>
+                                            <a href="/{{ page.categories | join: ' '  | downcase }}">{{ page.categories | join: "|" }}</a>
                                         </li>
                                     </ul>
                                     <h2 class="heading-title heading--half-colored my-0">{{ page.blog-title }}</h2>

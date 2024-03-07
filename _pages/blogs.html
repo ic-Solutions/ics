@@ -37,7 +37,7 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 
 							<div class="post__content-info">
 
-								<a href="/{{ post.categories | join: ' '}}" class="category">{{post.categories | join: " "}}</a>
+								<a href="/{{ post.categories | join: ' ' | downcase }}" class="category">{{post.categories | join: " "}}</a>
 
 								<a href="{{ post.url }}" class="h4 post__title entry-title">{{post.blog-title}}</a>
 
