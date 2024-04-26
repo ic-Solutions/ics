@@ -156,7 +156,7 @@
   & > * {
     display: inline-block;
     vertical-align: middle;
-    color: $icon-color;
+    color: #3d434f;
     font-size: 14px;
     font-weight: $h-font-weight;
 
@@ -181,7 +181,8 @@
   }
 
   a {
-    color: $icon-color;
+    color: #3d434f;
+    text-decoration: underline;
 
     &:hover {
       color: $primary-color;
@@ -851,7 +852,7 @@ a img.aligncenter {
   }
 
   .post-additional-info {
-	flex-direction: column;
+	flex-direction: row-reverse;
 
 	.post-comments-date-wrap {
 	  margin-top: 10px;
