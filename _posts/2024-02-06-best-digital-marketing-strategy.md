@@ -3,8 +3,8 @@ layout: post
 title: Best Digital Marketing Strategy - Organic, Paid, or Influencer Marketing \| ICS
 blog-title: Swipe Right on the Right Strategy - Organic, Paid, or Influencer Marketing?
 phrase: Finding the Perfect Match for Your Marketing Goals
-image: /assets\img\blog\digital-marketing-strategies.webp
-thumbnail: /assets\img\blog\thumbs\digital-marketing-strategies.webp
+image: /assets/img/blog/digital-marketing-strategies.webp
+thumbnail: /assets/img/blog/thumbs/digital-marketing-strategies.webp
 categories: [Digital Marketing]
 author: ICS
 ---

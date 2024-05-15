@@ -3,8 +3,8 @@ layout: post
 title: Speed, Simplicity, or Freedom? Find the Website Platform That Fits Your Needs \| ICS
 blog-title: Speed, Simplicity, or Freedom? Find the Website Platform That Fits Your Needs
 phrase: Picking the right tool from the get go!
-image: /assets\img\blog\finding-the-ideal-webbuilding-platform.webp
-thumbnail: /assets\img\blog\thumbs\finding-the-ideal-webbuilding-platform.webp
+image: /assets/img/blog/finding-the-ideal-webbuilding-platform.webp
+thumbnail: /assets/img/blog/thumbs/finding-the-ideal-webbuilding-platform.webp
 categories: [Website Development]
 author: ICS
 ---

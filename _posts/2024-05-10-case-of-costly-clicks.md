@@ -3,13 +3,13 @@ layout: post
 title: "The Curious Case of the Costly Clicks: How to Unmask PPC Culprits"
 blog-title: "The Curious Case of the Costly Clicks: How to Unmask PPC Culprits"
 phrase: 
-image: /assets\img\blog\curious-clicks.webp
-thumbnail: /assets\img\blog\curious-clicks.webp
+image: /assets/img/blog/curious-clicks.webp
+thumbnail: /assets/img/blog/curious-clicks.webp
 categories: [Digital Marketing]
 author: ICS
 ---
 
-<img src="/assets\img\blog\curious-clicks.webp" alt="easy SEO quick SEO top SEO cookbook">
+<img src="/assets/img/blog/curious-clicks.webp" alt="easy SEO quick SEO top SEO cookbook">
 
 ### Introduction:
 Is your PPC budget vanishing faster than a Houdini act, leaving you with nothing but frustrated sighs and a trail of unqualified leads? You're not alone. Businesses across the digital landscape are battling a hidden enemy: the Costly Click Culprit. This shadowy figure lurks within your PPC campaigns, draining your budget with irrelevant clicks, fraudulent activity, and landing page misalignment.

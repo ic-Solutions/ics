@@ -3,8 +3,8 @@ layout: post
 title: "The Psychology of Buttons : Why Users Click What They Click"
 blog-title: "The Psychology of Buttons : Why Users Click What They Click"
 phrase: 
-image: /assets\img\blog\button-ui-ux.webp
-thumbnail: /assets\img\blog\button-ui-ux.webp    
+image: /assets/img/blog/button-ui-ux.webp
+thumbnail: /assets/img/blog/button-ui-ux.webp    
 categories: [UI UX]
 author: ICS
 ---

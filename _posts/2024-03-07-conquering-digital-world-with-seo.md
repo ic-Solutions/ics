@@ -3,8 +3,8 @@ layout: post
 title: Game of SEO \| ICS
 blog-title: "Game of SEO: Conquer the Digital Kingdom with Search Engine Optimization"
 phrase: 
-image: /assets\img\blog\got-seo.jpeg
-thumbnail: /assets\img\blog\got-seo.jpeg    
+image: /assets/img/blog/got-seo.jpeg
+thumbnail: /assets/img/blog/got-seo.jpeg    
 categories: [SEO]
 author: ICS
 ---

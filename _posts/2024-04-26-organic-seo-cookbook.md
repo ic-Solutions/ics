@@ -3,13 +3,13 @@ layout: post
 title: "The Organic SEO Cookbook: Recipes for Ranking Success"
 blog-title: "The Organic SEO Cookbook: Recipes for Ranking Success"
 phrase: 
-image: /assets\img\blog\seo-organic-cookbook.webp
-thumbnail: /assets\img\blog\seo-organic-cookbook.webp
+image: /assets/img/blog/seo-organic-cookbook.webp
+thumbnail: /assets/img/blog/seo-organic-cookbook.webp
 categories: [Digital Marketing]
 author: ICS
 ---
 
-<img src="/assets\img\blog\seo-organic-cookbook.webp" alt="easy SEO quick SEO top SEO cookbook">
+<img src="/assets/img/blog/seo-organic-cookbook.webp" alt="easy SEO quick SEO top SEO cookbook">
 
 ### Introduction:
 Have you ever wondered how some websites seem to magically appear at the top of search engine results pages (SERPs)? The secret ingredient? Organic SEO. In this blog, we'll serve up a delicious guide to SEO fundamentals, proven recipes for success, and tips on measuring the impact of your efforts. 
@@ -94,7 +94,7 @@ Just like any good chef monitors the taste and presentation of their dishes, you
 
 ### Advanced SEO Techniques
 
-<img src="/assets\img\blog\blog_assets\organic-cookbook.webp" alt="Advance SEO">
+<img src="/assets/img/blog/blog_assets/organic-cookbook.webp" alt="Advance SEO">
 
 Now that you've mastered the basics, let's explore some advanced SEO techniques to further refine your website's ranking potential:
 
