@@ -71,7 +71,7 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 					
 					{% endfor %}
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position:sticky; top:120px">
+				<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12" style="position:sticky; top:0px">
 					<aside class="widget w-popular-tags">
 						<h5 class="pb-2">Popular tags</h5>
 						<ul class="tags-list">
@@ -92,7 +92,7 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 					<aside class="widget w-shared-posts" >
 						<h5 class="">Featured Posts</h5>
 						<ul class="list-shared-post">
-							{% for post in site.posts %}
+							{% for post in site.posts limit:4 %}
 							<li>
 								<article class="hentry post-shared">
 									<div class="post-thumb">
