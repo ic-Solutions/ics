@@ -93,7 +93,7 @@ image: https://icsoln.com/assets/../assets/img/logo-only-c.png
 					<aside class="widget w-shared-posts" >
 						<h5 class="">Featured Posts</h5>
 						<ul class="list-shared-post">
-							{% for post in site.posts %}
+							{% for post in site.posts limit : 4 %}
 							<li>
 								<article class="hentry post-shared">
 									<div class="post-thumb">
