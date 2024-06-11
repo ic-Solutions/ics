@@ -3,8 +3,8 @@ layout: post
 title: Speed, Simplicity, or Freedom? Find the Website Platform That Fits Your Needs \| ICS
 blog-title: Speed, Simplicity, or Freedom? Find the Website Platform That Fits Your Needs
 phrase: Picking the right tool from the get go!
-image: /assets/img/blog/finding-the-ideal-webbuilding-platform.webp
-thumbnail: /assets/img/blog/thumbs/finding-the-ideal-webbuilding-platform.webp
+image: /assets/img/blog/finding-the-ideal-webbuilding-platform.png
+thumbnail: /assets/img/blog/thumbs/finding-the-ideal-webbuilding-platform.png
 categories: [Website Development]
 author: ICS
 ---
@@ -24,7 +24,7 @@ author: ICS
         }
     }
 </script>
-<img src="/assets/img/blog/finding-the-ideal-webbuilding-platform.webp">
+<img src="/assets/img/blog/finding-the-ideal-webbuilding-platform.png">
 
 ### Introduction
 In today's digital age, having a website is no longer a luxury, but a necessity. Whether you're a small business owner, a blogger, or simply want to showcase your work online, choosing the right platform to build your website is crucial. However, with a plethora of options available, it can be overwhelming to navigate the different features and functionalities. This is where understanding your priorities becomes key.
