@@ -7,7 +7,29 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 
 ---
 
-<!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
+<script type="text/javascript">
+	function dataCallback(response) {
+		let url = 'https://us-central1-wowitshappening-716c4.cloudfunctions.net/checkRecaptcha?response=' +
+		encodeURIComponent(response);
+	fetch(url, {
+		mode: 'cors',
+	headers: {
+	'Access-Control-Allow-Origin': '*',
+	'Content-Type': 'application/json',
+	'Accept': 'application/json'
+	}
+	})
+	.then(function (data) {
+	document.querySelector("#contact-page-submit").disabled = false
+	})
+	.catch(reason => console.log(reason.message))
+	}
+	function dataExpiredCallback() {
+	console.log("dataExpiredCallback")
+	}
+	console.log(dataCallback)
+</script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
 		<div class="container">
@@ -75,39 +97,18 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 								</div>
 							</div>
 						</div>
-						<!-- <script type="text/javascript">
-							function dataCallback(response) {
-							let url = 'https://us-central1-wowitshappening-716c4.cloudfunctions.net/checkRecaptcha?response=' +
-							encodeURIComponent(response);
-							fetch(url, {
-							mode: 'cors',
-							headers: {
-							'Access-Control-Allow-Origin': '*',
-							'Content-Type': 'application/json',
-							'Accept': 'application/json'
-							}
-							})
-							.then(function (data) {
-							document.querySelector("#contact-page-submit").removeAttribute("disabled");
-							document.querySelector("#contact-page-submit").classList.remove("disabled");
-							})
-							.catch(reason => console.log(reason.message))
-							}
-							function dataExpiredCallback() {
-							console.log("dataExpiredCallback")
-							}
-						</script> -->
-						<!-- <div class="g-recaptcha"
+						
+						<div class="g-recaptcha"
 							data-sitekey="6LeZcQoqAAAAAC04-sHjMPLz64cMyCVsGZnTffXS"
 							data-callback="dataCallback"
-							data-expired-callback="dataExpiredCallback" ></div> -->
+							data-expired-callback="dataExpiredCallback" ></div>
 							<br>
                         <div class="row">
 							<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-								<button id="contact-page-submit" class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit" value="send">send a message</button>
+								<button id="contact-page-submit" class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit" value="send" disabled="true">send a message</button>
 							</div>
 						<style>
-							button:disabled {
+							button[disabled="true"]{
 								opacity: 0.4;
 							}
 						</style>
