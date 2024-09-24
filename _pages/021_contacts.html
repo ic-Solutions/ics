@@ -9,25 +9,26 @@ image: https://icsoln.com/assets/img/logo-only-c.png
 
 <script type="text/javascript">
 	function dataCallback(response) {
-		let url = 'https://us-central1-wowitshappening-716c4.cloudfunctions.net/checkRecaptcha?response=' +
-		encodeURIComponent(response);
-	fetch(url, {
-		mode: 'cors',
-	headers: {
-	'Access-Control-Allow-Origin': '*',
-	'Content-Type': 'application/json',
-	'Accept': 'application/json'
-	}
-	})
-	.then(function (data) {
 	document.querySelector("#contact-page-submit").disabled = false
-	})
-	.catch(reason => console.log(reason.message))
+
+	// 	let url = 'https://us-central1-wowitshappening-716c4.cloudfunctions.net/checkRecaptcha?response=' +
+	// 	encodeURIComponent(response);
+	// fetch(url, {
+	// 	mode: 'cors',
+	// headers: {
+	// 'Access-Control-Allow-Origin': '*',
+	// 'Content-Type': 'application/json',
+	// 'Accept': 'application/json'
+	// }
+	// })
+	// .then(function (data) {
+	// document.querySelector("#contact-page-submit").disabled = false
+	// })
+	// .catch(reason => console.log(reason.message))
 	}
 	function dataExpiredCallback() {
 	console.log("dataExpiredCallback")
 	}
-	console.log(dataCallback)
 </script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
