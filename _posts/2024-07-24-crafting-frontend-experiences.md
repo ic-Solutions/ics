@@ -3,13 +3,13 @@ layout: post
 title: "Crafting User Experiences: A Look at Our FrontEnd Portfolio (Part 1)"
 blog-title: "Crafting User Experiences: A Look at Our FrontEnd Portfolio (Part 1)"
 phrase: 
-image: /assets/img/blog/crafting-user-experiences.webp
-thumbnail: /assets/img/blog/thumbs/crafting-user-experiences.webp
+image: /assets/img/blog/crafting-user-experiences-part-1.webp
+thumbnail: /assets/img/blog/thumbs/crafting-user-experiences-part-1.webp
 categories: [Website Development]
 author: ICS
 ---
 
-<img src="/assets/img/blog/crafting-user-experiences.webp">
+<img src="/assets/img/blog/crafting-user-experiences-part-1.webp">
 
 ### Introduction
 
