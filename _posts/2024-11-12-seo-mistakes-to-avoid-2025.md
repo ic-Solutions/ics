@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "7 Common SEO Mistakes to avoid in 2025"
-blog-title: "7 Common SEO Mistakes to avoid in 2025"
+title: "7 Common SEO Mistakes to Avoid in 2025"
+blog-title: "7 Common SEO Mistakes to Avoid in 2025"
 phrase:
 image: /assets/img/blog/seo-mistakes-to-avoid-2025.webp
 thumbnail: /assets/img/blog/thumbs/seo-mistakes-to-avoid-2025.webp
